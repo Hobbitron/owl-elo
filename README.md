@@ -1,1 +1,18 @@
 # owl-elo
+
+ELO rankings for OWL
+
+Team|Wins|Losses|ELO
+:---|---:|:----:|:--
+LON|2|0|1530
+NYE|2|0|1525
+VAL|1|0|1506
+SEO|1|0|1506
+SHD|1|0|1506
+GLA|0|0|1500
+BOS|1|1|1499
+DAL|0|1|1493
+PHI|1|1|1490
+SFS|0|2|1487
+FLA|0|2|1483
+HOU|0|2|1470
