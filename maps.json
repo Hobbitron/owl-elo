@@ -1,29 +1,46 @@
 {
     "dorado": {
-        "maxPoints": 3
+        "type": "escort"        
     },
     "templeOfAnubis": {
-        "maxPoints": 2
+        "type": "assault"
     },
     "ilios": {
-        "maxPoints": 2
+        "type": "control"
     },
     "numbani": {
-        "maxPoints": 3
+        "type": "hybrid"
     },
     "eichenwalde": {
-        "maxPoints": 3
+        "type": "hybrid"
     },
     "junkertown": {
-        "maxPoints": 3
+        "type": "escort"
     },
-    "horizonLunarColony": {
-        "maxPoints": 2
+    "horizonLunarColony": {        
+        "type": "assault"
     },
-    "lijiangTower": {
-        "maxPoints": 2
+    "lijiangTower": {        
+        "type": "control"
     },
-    "oasis": {
-        "maxPoints": 2
+    "oasis": {        
+        "type": "control"
+    },
+    "nepal": {
+        "type": "control"
+    },
+    "hollywood": {
+        "type": "hybrid"
+    },
+    "volskayaIndustries": {
+        "type": "assault"
+    },
+    "route66": {
+        "type": "escort"
+    },
+    "watchpointGibraltar": {
+        "type": "escort"
     }
+
+
 }
