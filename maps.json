@@ -1,0 +1,29 @@
+{
+    "dorado": {
+        "maxPoints": 3
+    },
+    "templeOfAnubis": {
+        "maxPoints": 2
+    },
+    "ilios": {
+        "maxPoints": 2
+    },
+    "numbani": {
+        "maxPoints": 3
+    },
+    "eichenwalde": {
+        "maxPoints": 3
+    },
+    "junkertown": {
+        "maxPoints": 3
+    },
+    "horizonLunarColony": {
+        "maxPoints": 2
+    },
+    "lijiangTower": {
+        "maxPoints": 2
+    },
+    "oasis": {
+        "maxPoints": 2
+    }
+}
