@@ -4,7 +4,7 @@ var lineReader = require('readline').createInterface({
 });
 
 var maplist = JSON.parse(fs.readFileSync('maps.json', "utf-8"))
-//console.log(maplist);
+    //console.log(maplist);
 var mapRecords = {};
 var standings = [];
 var data = [];
@@ -46,7 +46,6 @@ lineReader.on('close', function(a) {
 });
 
 function getEloKeys(team) {
-    console.log(team);
     var x = Object.keys(team).filter(function(a) {
         if (a.indexOf('elo') > 0) {
             return true;
@@ -65,8 +64,8 @@ function getEloKeys(team) {
             return false;
         }
         if (a == '')
-        return true;
-    });    
+            return true;
+    });
 }
 
 function calcTeamData(arr) {
@@ -77,43 +76,42 @@ function calcTeamData(arr) {
         'opponent': arr[2],
         'week': arr[0],
         'points': 0
-        // 'dorado': calcGameData(arr[3], 'dorado'),
-        // 'templeOfAnubis': calcGameData(arr[4], 'templeOfAnubis'),
-        // 'ilios': calcGameData(arr[5], 'ilios'),
-        // 'numbani': calcGameData(arr[6], 'numbani'),
-        // 'eichenwalde': calcGameData(arr[7], 'eichenwalde'),
-        // 'junkertown': calcGameData(arr[8], 'junkertown'),
-        // 'horizonLunarColony': calcGameData(arr[9], 'horizonLunarColony'),
-        // 'lijiangTower': calcGameData(arr[10], 'lijiangTower'),
-        // 'oasis': calcGameData(arr[11], 'oasis'),
+            // 'dorado': calcGameData(arr[3], 'dorado'),
+            // 'templeOfAnubis': calcGameData(arr[4], 'templeOfAnubis'),
+            // 'ilios': calcGameData(arr[5], 'ilios'),
+            // 'numbani': calcGameData(arr[6], 'numbani'),
+            // 'eichenwalde': calcGameData(arr[7], 'eichenwalde'),
+            // 'junkertown': calcGameData(arr[8], 'junkertown'),
+            // 'horizonLunarColony': calcGameData(arr[9], 'horizonLunarColony'),
+            // 'lijiangTower': calcGameData(arr[10], 'lijiangTower'),
+            // 'oasis': calcGameData(arr[11], 'oasis'),
     };
-        //Initialize the opponent's record
-        var oppdatapoint = {
-            'opponent': arr[1],
-            'week': arr[0],
-            'points': 0
-        }
+    //Initialize the opponent's record
+    var oppdatapoint = {
+        'opponent': arr[1],
+        'week': arr[0],
+        'points': 0
+    }
     var keys = Object.keys(maplist);
     if (datapoint.opponent === 'HOU') {
         var a = 3;
     }
-    for (var i = 3;i < keys.length + 3;i++) {
+    for (var i = 3; i < keys.length + 3; i++) {
 
-        var mapname = keys[i-3];
+        var mapname = keys[i - 3];
         if (mapname) {
-            var mapResult = calcGameData(arr[i],mapname)
+            var mapResult = calcGameData(arr[i], mapname)
             if (!mapResult) {
                 continue;
             }
-            //console.log(mapResult);
             if (mapResult.winner === 0) {
-                datapoint.points++;                                
+                datapoint.points++;
             } else if (mapResult.winner === 1) {
-                oppdatapoint.points++;                
+                oppdatapoint.points++;
             }
             datapoint[mapname] = mapResult;
             oppdatapoint[mapname] = mapResult;
-        }        
+        }
     }
 
     //Check to see if we've already recorded records for the teams, and init them if needed
@@ -144,6 +142,7 @@ function calcTeamData(arr) {
 }
 
 function calcGameData(data, mapname) {
+
     //If it's an empty record bail
     if (!data || data == "") {
         return;
@@ -151,6 +150,7 @@ function calcGameData(data, mapname) {
     //Split on the colon    
     var x = parseInt(data.split(':')[0]);
     var y = parseInt(data.split(':')[1]);
+    calcMapPoints(x, y, mapname);
     var maxpoint = maplist[mapname].maxPoints;
     //If the points are equal, it was a tie, and strength of victory is 0
     if (x == y) {
@@ -160,11 +160,11 @@ function calcGameData(data, mapname) {
     if (x > y) {
         var windiff = (x - y + Math.floor(x / maxpoint) - Math.floor(y / maxpoint));
         var modifiedWinDiff = windiff / (maxpoint + 1);
-        return {winner: 0, score: Math.pow(modifiedWinDiff, Math.floor((x + y) / (maxpoint * 2)) + 1)};
+        return { winner: 0, score: Math.pow(modifiedWinDiff, Math.floor((x + y) / (maxpoint * 2)) + 1) };
     } else {
         var windiff = (y - x + Math.floor(y / maxpoint) - Math.floor(x / maxpoint));
         var modifiedWinDiff = windiff / (maxpoint + 1);
-        return {winner: 1, score: Math.pow(modifiedWinDiff, Math.floor((x + y) / (maxpoint * 2)) + 1)};
+        return { winner: 1, score: Math.pow(modifiedWinDiff, Math.floor((x + y) / (maxpoint * 2)) + 1) };
     }
 }
 
@@ -172,7 +172,7 @@ function adjustElo(teamName, matchData) {
     //get local handles to the teams
     var team1 = teamData[teamName];
     var team2 = teamData[matchData.opponent];
-    
+
     var team1Adjustments = 0;
     var team2Adjustments = 0;
     //Need to track the number of wins to adjust elo
@@ -180,8 +180,7 @@ function adjustElo(teamName, matchData) {
     var team2Wins = 0;
 
     //Go through each map for the match and update the team's map elo
-    for (var key in matchData) {      
-        console.log(getEloKeys(team1));        
+    for (var key in matchData) {
         if (key != 'opponent' && key != 'week' && key != 'points' && key != 'win') {
             if (!team1[key + 'elo']) {
                 team1[key + 'elo'] = baseElo;
@@ -198,12 +197,14 @@ function adjustElo(teamName, matchData) {
                 winningTeam = team2;
                 losingTeam = team1;
                 team2Wins++;
-            }            
+            }
             if (matchData[key].score === 0) {
                 winningTeam = team1[key + 'elo'] > team2[key + 'elo'] ? team1 : team2;
                 losingTeam = team1[key + 'elo'] < team2[key + 'elo'] ? team1 : team2;
             }
-            var adjustment = calcElo(winningTeam[key + 'elo'], losingTeam[key + 'elo'], matchData[key].score);
+            var expectedOutcome = calcElo(winningTeam[key + 'elo'], losingTeam[key + 'elo'], matchData[key].score) * 12;
+
+            var adjustment = calcElo3(winningTeam[key + 'elo'], matchData[key].score, expectedOutcome);
             //who gets the positive adjustment, who gets negative
             winningTeam[key + 'elo'] += adjustment;
             losingTeam[key + 'elo'] -= adjustment;
@@ -241,13 +242,13 @@ function calcStandings() {
         var team = teamData[key];
         var totalGames = team.matchData.length;
         for (var i = 0; i < totalGames; i++) {
-            var matchData = team.matchData[i];                                    
+            var matchData = team.matchData[i];
             if (matchData.winner) {
                 wins++;
             } else if (matchData.tie) {
                 console.log('TIE?!');
             } else {
-                losses++;                
+                losses++;
             }
         }
         team.wins = wins;
@@ -334,7 +335,8 @@ function projectMatchup(team1, team2, maps) {
 
 
 
-function calcElo(elo_a, elo_b, strength_of_victory) {
+function calcElo(r_a, r_b, strength_of_victory) {
+    return 1 / (1 + Math.pow(10, (r_b - r_a) / 400));
     var a = elo_b - elo_a;
     a = a / eloConst;
     a = 1 + Math.pow(10, a);
@@ -345,24 +347,24 @@ function calcElo(elo_a, elo_b, strength_of_victory) {
 }
 
 function calcElo2(r_a, r_b, strength_of_victory) {
-    return 1/(1+Math.pow(10,(r_b-r_a)/400));
+    return 1 / (1 + Math.pow(10, (r_b - r_a) / 400));
 }
 
 function calcElo3(r_a, s_a, e_a) {
-    return r_a + 40 * (s_a - e_a);    
+    return r_a + 40 * (s_a - e_a);
 }
-var x = calcElo2(1500,1500,1);
+var x = calcElo2(1500, 1500, 1);
 var y = calcElo3(1500, .5, x)
 console.log(x, y);
 console.log('done');
 
-function calcMapPoints(score_attack,score_defense,mapname) {
-    var result = {win: 0, loss: 0, tie: 0, score: 0};
+function calcMapPoints(score_attack, score_defense, mapname) {
+    var result = { win: 0, loss: 0, tie: 0, score: 0 };
     var map = maplist[mapname];
     if (score_attack > score_defense) {
         result.win = 1;
     } else if (score_attack === score_defense) {
-        result.tie = 1;        
+        result.tie = 1;
     } else {
         result.loss = 1;
     }
@@ -371,52 +373,65 @@ function calcMapPoints(score_attack,score_defense,mapname) {
     var partialPoints = 0;
     switch (map.type.toLowerCase()) {
         case "escort":
-            atkPoints = Math.floor(score_attack/3)*6;
+            atkPoints = Math.floor(score_attack / 3) * 12;
             partialPonts = score_attack % 3;
             if (partialPonts === 1) {
-                atkPoints += 1;
-            } else if (partialPonts === 2) {
                 atkPoints += 2;
+            } else if (partialPonts === 2) {
+                atkPoints += 6;
             }
-            defPoints = Math.floor(score_defense/3)*6;
+            defPoints = Math.floor(score_defense / 3) * 12;
             partialPonts = score_defense % 3;
             if (partialPonts === 1) {
-                defPoints += 1;
-            } else if (partialPonts === 2) {
                 defPoints += 2;
+            } else if (partialPonts === 2) {
+                defPoints += 6;
             }
+            break;
         case "hybrid":
-            atkPoints = Math.floor(score_attack/3)*9;
+            atkPoints = Math.floor(score_attack / 3) * 12;
             partialPonts = score_attack % 3;
             if (partialPonts === 1) {
                 atkPoints += 2;
             } else if (partialPonts === 2) {
-                atkPoints += 3;
+                atkPoints += 6;
             }
-            defPoints = Math.floor(score_defense/3)*9;
+            defPoints = Math.floor(score_defense / 3) * 12;
             partialPonts = score_defense % 3;
             if (partialPonts === 1) {
                 defPoints += 2;
             } else if (partialPonts === 2) {
-                defPoints += 3;
+                defPoints += 6;
             }
+            break;
         case "assault":
-            atkPoints = Math.floor(score_attack/3)*9;
-            partialPonts = score_attack % 3;
+            atkPoints = Math.floor(score_attack / 2) * 12;
+            partialPonts = score_attack % 2;
             if (partialPonts === 1) {
-                atkPoints += 2;
-            } else if (partialPonts === 2) {
-                atkPoints += 3;
+                atkPoints += 4;
             }
-            defPoints = Math.floor(score_defense/3)*9;
-            partialPonts = score_defense % 3;
+            defPoints = Math.floor(score_defense / 3) * 12;
+            partialPonts = score_defense % 2;
             if (partialPonts === 1) {
-                defPoints += 2;
-            } else if (partialPonts === 2) {
-                defPoints += 3;
+                defPoints += 4;
             }
+            break;
         case "control":
+            atkPoints = Math.floor(score_attack / 2) * 12;
+            partialPonts = score_attack % 2;
+            if (partialPonts === 1) {
+                atkPoints += 6;
+            }
+            defPoints = Math.floor(score_defense / 3) * 12;
+            partialPonts = score_defense % 2;
+            if (partialPonts === 1) {
+                defPoints += 6;
+            }
+            break;
         default:
             console.log("We shouldn't be here");
+            break;
     }
+    console.log(score_attack, score_defense, atkPoints - defPoints, map.type);
+    return atkPoints - defPoints;
 }
