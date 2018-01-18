@@ -374,9 +374,9 @@ function calcMapPoints(score_attack,score_defense,mapname) {
             atkPoints = Math.floor(score_attack/3)*6;
             partialPonts = score_attack % 3;
             if (partialPonts === 1) {
-                atkPoints += 2;
+                atkPoints += 1;
             } else if (partialPonts === 2) {
-                atkPoints += 3;
+                atkPoints += 2;
             }
             defPoints = Math.floor(score_defense/3)*6;
             partialPonts = score_defense % 3;
@@ -386,21 +386,35 @@ function calcMapPoints(score_attack,score_defense,mapname) {
                 defPoints += 2;
             }
         case "hybrid":
-            atkPoints = Math.floor(score_attack/3)*6;
+            atkPoints = Math.floor(score_attack/3)*9;
             partialPonts = score_attack % 3;
             if (partialPonts === 1) {
-                atkPoints++;
-            } else if (partialPonts === 2) {
                 atkPoints += 2;
+            } else if (partialPonts === 2) {
+                atkPoints += 3;
             }
-            defPoints = Math.floor(score_defense/3)*6;
+            defPoints = Math.floor(score_defense/3)*9;
             partialPonts = score_defense % 3;
             if (partialPonts === 1) {
-                defPoints += 3;
-            } else if (partialPonts === 2) {
                 defPoints += 2;
+            } else if (partialPonts === 2) {
+                defPoints += 3;
             }
         case "assault":
+            atkPoints = Math.floor(score_attack/3)*9;
+            partialPonts = score_attack % 3;
+            if (partialPonts === 1) {
+                atkPoints += 2;
+            } else if (partialPonts === 2) {
+                atkPoints += 3;
+            }
+            defPoints = Math.floor(score_defense/3)*9;
+            partialPonts = score_defense % 3;
+            if (partialPonts === 1) {
+                defPoints += 2;
+            } else if (partialPonts === 2) {
+                defPoints += 3;
+            }
         case "control":
         default:
             console.log("We shouldn't be here");
