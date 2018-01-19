@@ -96,14 +96,18 @@ function calcTeamData(arr) {
     for (var i = 3; i < keys.length + 3; i++) {
         var mapname = keys[i - 3];
         if (mapname) {
+
             var mapResult = calcGameData(arr[i], mapname)
+            if (mapname === 'lijiangTower') {
+                console.log('tower', mapResult);
+            }
             if (mapResult === 0) {
                 oppdatapoint.points++;
             } else if (mapResult === 1) {
                 datapoint.points++;
             }
-            datapoint[mapname] = mapResult;
-            oppdatapoint[mapname] = mapResult;
+            datapoint[mapname] = parseInt(mapResult);
+            oppdatapoint[mapname] = parseInt(mapResult);
         }
     }
 
@@ -140,6 +144,11 @@ function calcGameData(data, mapname) {
     if (!data || data == "") {
         return;
     }
+
+    if (mapname === 'lijiangTower') {
+        console.log('tower');
+    }
+
     //Split on the colon    
     var x = parseInt(data.split(':')[0]);
     var y = parseInt(data.split(':')[1]);
@@ -156,19 +165,23 @@ function calcGameData(data, mapname) {
 }
 
 function adjustElo(teamName, matchData) {
+    if (Object.keys(matchData).length === 1) {
+        console.log('a');
+    }
     //get local handles to the teams
     var team1 = teamData[teamName];
     var team2 = teamData[matchData.opponent];
 
-    var team1Adjustments = 0;
-    var team2Adjustments = 0;
     //Need to track the number of wins to adjust elo
     var team1Wins = 0;
     var team2Wins = 0;
 
     //Go through each map for the match and update the team's map elo
     for (var key in matchData) {
-        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'win') {
+        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser') {
+            if (isNaN(matchData[key])) {
+                continue;
+            }
             if (!team1[key + 'elo']) {
                 team1[key + 'elo'] = baseElo;
             }
@@ -185,25 +198,14 @@ function adjustElo(teamName, matchData) {
                 losingTeam = team1;
                 team2Wins++;
             }
-            if (matchData.tie === 1) {
-                winningTeam = team1[key + 'elo'] > team2[key + 'elo'] ? team1 : team2;
-                losingTeam = team1[key + 'elo'] < team2[key + 'elo'] ? team1 : team2;
+            if (key === 'lijiangTower' && matchData[key]) {
+                console.log('a');
             }
             var e_a = expectedScore(winningTeam[key + 'elo'], losingTeam[key + 'elo']);
             var adjustment = eloAdjustment(winningTeam[key + 'elo'], matchData[key], e_a);
             //who gets the positive adjustment, who gets negative
             winningTeam[key + 'elo'] += adjustment;
             losingTeam[key + 'elo'] -= adjustment;
-            if (winningTeam == team1) {
-                team1Adjustments += adjustment;
-            } else {
-                team1Adjustments -= adjustment;
-            }
-            if (losingTeam == team2) {
-                team2Adjustments -= adjustment;
-            } else {
-                team2Adjustments += adjustment;
-            }
         }
     }
     if (team2Wins > team1Wins) {
@@ -261,17 +263,17 @@ function calcStandings() {
 
 
 function calcMapRecords() {
-    for (var key in maplist) {
-        var record = { best: 0, bestTeam: "", worst: 9999, worstTeam: "" };
-        mapRecords[key] = record;
+    for (var mapkey in maplist) {
+        var record = { best: 0, bestTeam: "", worst: 9999, worstTeam: "", name: mapkey };
+        mapRecords[mapkey] = record;
         for (var key in teamData) {
             var team = teamData[key];
-            if (team[key + 'elo'] > record.best) {
-                record.best = team[maps[i] + 'elo']
+            if (team[mapkey + 'elo'] > record.best) {
+                record.best = team[mapkey + 'elo']
                 record.bestTeam = key;
             }
-            if (team[key + 'elo'] < record.worst) {
-                record.worst = team[maps[i] + 'elo']
+            if (team[mapkey + 'elo'] < record.worst) {
+                record.worst = team[mapkey + 'elo']
                 record.worstTeam = key;
             }
         }
@@ -289,7 +291,25 @@ function writeData() {
         }
         return p + c.name + "|" + c.wins + "|" + c.losses + "|" + c.elo.toString().slice(0, 4) + "\r\n";
     })
+    var redditfriendlymapstandings = "Map|Best Team|Rating|Weakest Team|Rating\r\n:--|:-------:|:----:|:----------:|-----:\r\n";
+    for (var key in mapRecords) {
+        var r = mapRecords[key];
+        if (!r.best) {
+            continue;
+        }
+        var name = r.name[0].toUpperCase();
+        for (var i = 1; i < r.name.length; i++) {
+            if (r.name[i].toUpperCase() === r.name[i]) {
+                name += ' ';
+            }
+            name += r.name[i];
+        }
+        console.log(name);
+        redditfriendlymapstandings += name + "|" + r.bestTeam + "|" + r.best.toString().slice(0, 4) + "|" + r.worstTeam + "|" + r.worst.toString().slice(0, 4) + "\r\n";
+    }
+
     console.log(redditfriendlystandings);
+    console.log(redditfriendlymapstandings);
     output.standings = standings;
     fs.writeFile("output.txt", JSON.stringify(output, null, 2), function(err) {
         if (err) {
