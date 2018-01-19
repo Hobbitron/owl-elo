@@ -69,23 +69,11 @@ function getEloKeys(team) {
 }
 
 function calcTeamData(arr) {
-
-
     //Create the data point with the match data and Strength of Victory per match
     var datapoint = {
         'opponent': arr[2],
         'week': arr[0],
-        'points': 0
-            // 'dorado': calcGameData(arr[3], 'dorado'),
-            // 'templeOfAnubis': calcGameData(arr[4], 'templeOfAnubis'),
-            // 'ilios': calcGameData(arr[5], 'ilios'),
-            // 'numbani': calcGameData(arr[6], 'numbani'),
-            // 'eichenwalde': calcGameData(arr[7], 'eichenwalde'),
-            // 'junkertown': calcGameData(arr[8], 'junkertown'),
-            // 'horizonLunarColony': calcGameData(arr[9], 'horizonLunarColony'),
-            // 'lijiangTower': calcGameData(arr[10], 'lijiangTower'),
-            // 'oasis': calcGameData(arr[11], 'oasis'),
-    };
+        'points': 0    };
     //Initialize the opponent's record
     var oppdatapoint = {
         'opponent': arr[1],
@@ -96,15 +84,21 @@ function calcTeamData(arr) {
     for (var i = 3; i < keys.length + 3; i++) {
         var mapname = keys[i - 3];
         if (mapname) {
-
             var mapResult = calcGameData(arr[i], mapname)
-            if (mapResult === 0) {
-                oppdatapoint.points++;
-            } else if (mapResult === 1) {
-                datapoint.points++;
+            if (mapResult === undefined) {
+                continue;
             }
-            datapoint[mapname] = parseInt(mapResult);
-            oppdatapoint[mapname] = parseInt(mapResult);
+            if (mapResult > .5) {
+                datapoint.points++;     
+            } else if (mapResult < .5) {
+                oppdatapoint.points++;
+                
+            } else {
+                datapoint[mapname] = .5;
+                oppdatapoint[mapname] = .5;
+            }   
+            datapoint[mapname] = mapResult;
+            oppdatapoint[mapname] = 1 - mapResult;                     
         }
     }
 
@@ -149,12 +143,7 @@ function calcGameData(data, mapname) {
     if (x == y) {
         return .5;
     }
-
-    if (x > y) {
-        return 1;
-    } else {
-        return 0;
-    }
+    return x / (x + y);
 }
 
 function adjustElo(teamName, matchData) {
@@ -166,9 +155,12 @@ function adjustElo(teamName, matchData) {
     var team1Wins = 0;
     var team2Wins = 0;
 
+    var winningTeam;
+    var losingTeam;
+
     //Go through each map for the match and update the team's map elo
     for (var key in matchData) {
-        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser') {
+        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser '&& key != 'tie') {
             if (isNaN(matchData[key])) {
                 continue;
             }
@@ -179,28 +171,34 @@ function adjustElo(teamName, matchData) {
                 team2[key + 'elo'] = baseElo;
             }
             var winningTeam;
-            if (matchData.winner) {
+            if (matchData[key] > .5) {                
                 winningTeam = team1;
-                losingTeam = team2;
-                team1Wins++;
-            } else if (matchData.loser) {
+                losingTeam = team2;                
+            } else if (matchData[key] < .5) {            
                 winningTeam = team2;
-                losingTeam = team1;
-                team2Wins++;
+                losingTeam = team1;                
+            } else if (matchData[key] === .5) {
+                if (team1[key + 'elo'] > team2[key + 'elo']) {
+                    winningTeam = team1;
+                    losingTeam = team2;
+                } else {
+                    winningTeam = team2;
+                    losingTeam = team1;
+                }
             }
             var e_a = expectedScore(winningTeam[key + 'elo'], losingTeam[key + 'elo']);
-            var adjustment = eloAdjustment(winningTeam[key + 'elo'], matchData[key], e_a);
+            var adjustment = eloAdjustment(winningTeam[key + 'elo'], winningTeam === team1 ? matchData[key] : 1 - matchData[key],matchData[key], e_a);
             //who gets the positive adjustment, who gets negative
             winningTeam[key + 'elo'] += adjustment;
             losingTeam[key + 'elo'] -= adjustment;
         }
     }
-    if (team2Wins > team1Wins) {
+    if (matchData.loser) {
         var e_a = expectedScore(team2.elo, team1.elo);
         var adjustment = eloAdjustment(team2.elo, 1, e_a);
         team1.elo -= adjustment;
         team2.elo += adjustment;
-    } else if (team2Wins < team1Wins) {
+    } else if (matchData.winner) {
         var e_a = expectedScore(team1.elo, team2.elo);
         var adjustment = eloAdjustment(team1.elo, 1, e_a);
         team2.elo -= adjustment;
