@@ -98,9 +98,6 @@ function calcTeamData(arr) {
         if (mapname) {
 
             var mapResult = calcGameData(arr[i], mapname)
-            if (mapname === 'lijiangTower') {
-                console.log('tower', mapResult);
-            }
             if (mapResult === 0) {
                 oppdatapoint.points++;
             } else if (mapResult === 1) {
@@ -145,10 +142,6 @@ function calcGameData(data, mapname) {
         return;
     }
 
-    if (mapname === 'lijiangTower') {
-        console.log('tower');
-    }
-
     //Split on the colon    
     var x = parseInt(data.split(':')[0]);
     var y = parseInt(data.split(':')[1]);
@@ -165,9 +158,6 @@ function calcGameData(data, mapname) {
 }
 
 function adjustElo(teamName, matchData) {
-    if (Object.keys(matchData).length === 1) {
-        console.log('a');
-    }
     //get local handles to the teams
     var team1 = teamData[teamName];
     var team2 = teamData[matchData.opponent];
@@ -197,9 +187,6 @@ function adjustElo(teamName, matchData) {
                 winningTeam = team2;
                 losingTeam = team1;
                 team2Wins++;
-            }
-            if (key === 'lijiangTower' && matchData[key]) {
-                console.log('a');
             }
             var e_a = expectedScore(winningTeam[key + 'elo'], losingTeam[key + 'elo']);
             var adjustment = eloAdjustment(winningTeam[key + 'elo'], matchData[key], e_a);
@@ -304,7 +291,6 @@ function writeData() {
             }
             name += r.name[i];
         }
-        console.log(name);
         redditfriendlymapstandings += name + "|" + r.bestTeam + "|" + r.best.toString().slice(0, 4) + "|" + r.worstTeam + "|" + r.worst.toString().slice(0, 4) + "\r\n";
     }
 
@@ -330,11 +316,9 @@ function projectMatchup(team1, team2, maps) {
         t2mapelo = t2[mapelo] || 1500;
         var elodiff = t1mapelo - t2mapelo;
         var a = 1 / (Math.pow(10, (-1 * elodiff) / eloConst) + 1)
-        console.log(t1mapelo, t2mapelo, a);
         overall += a;
     }
     overall = overall / maps.length * 100;
-    console.log(overall);
 }
 
 
