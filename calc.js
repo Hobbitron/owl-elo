@@ -73,7 +73,8 @@ function calcTeamData(arr) {
     var datapoint = {
         'opponent': arr[2],
         'week': arr[0],
-        'points': 0    };
+        'points': 0
+    };
     //Initialize the opponent's record
     var oppdatapoint = {
         'opponent': arr[1],
@@ -89,16 +90,16 @@ function calcTeamData(arr) {
                 continue;
             }
             if (mapResult > .5) {
-                datapoint.points++;     
+                datapoint.points++;
             } else if (mapResult < .5) {
                 oppdatapoint.points++;
-                
+
             } else {
                 datapoint[mapname] = .5;
                 oppdatapoint[mapname] = .5;
-            }   
+            }
             datapoint[mapname] = mapResult;
-            oppdatapoint[mapname] = 1 - mapResult;                     
+            oppdatapoint[mapname] = 1 - mapResult;
         }
     }
 
@@ -160,7 +161,7 @@ function adjustElo(teamName, matchData) {
 
     //Go through each map for the match and update the team's map elo
     for (var key in matchData) {
-        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser '&& key != 'tie') {
+        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser ' && key != 'tie') {
             if (isNaN(matchData[key])) {
                 continue;
             }
@@ -171,12 +172,12 @@ function adjustElo(teamName, matchData) {
                 team2[key + 'elo'] = baseElo;
             }
             var winningTeam;
-            if (matchData[key] > .5) {                
+            if (matchData[key] > .5) {
                 winningTeam = team1;
-                losingTeam = team2;                
-            } else if (matchData[key] < .5) {            
+                losingTeam = team2;
+            } else if (matchData[key] < .5) {
                 winningTeam = team2;
-                losingTeam = team1;                
+                losingTeam = team1;
             } else if (matchData[key] === .5) {
                 if (team1[key + 'elo'] > team2[key + 'elo']) {
                     winningTeam = team1;
@@ -187,7 +188,10 @@ function adjustElo(teamName, matchData) {
                 }
             }
             var e_a = expectedScore(winningTeam[key + 'elo'], losingTeam[key + 'elo']);
-            var adjustment = eloAdjustment(winningTeam[key + 'elo'], winningTeam === team1 ? matchData[key] : 1 - matchData[key],matchData[key], e_a);
+            if (team1.name === "SFS" && key === "ilios") {
+                console.log('break');
+            }
+            var adjustment = eloAdjustment(winningTeam[key + 'elo'], winningTeam === team1 ? matchData[key] : 1 - matchData[key], e_a);
             //who gets the positive adjustment, who gets negative
             winningTeam[key + 'elo'] += adjustment;
             losingTeam[key + 'elo'] -= adjustment;
