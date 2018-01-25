@@ -20,9 +20,9 @@ Week	Team A	Team B	Dorado	Temple Of Anubis	Ilios	Numbani	Eichenwalde	Junkertown	
 2	SEO	BOS				3:2		3:2	2:1		2:0
 2	SHD	FLA	1:2	1:2	0:2	2:3					
 2	LON	DAL						3:2	2:0		0:2
-2	LAV	LON	1:2				3:1		2:3	0:2	2:0
-2	LAG	NYE	0:1				1:2		1:2		0:2
+2	VAL	LON	1:2				3:1		2:3	0:2	2:0
+2	GLA	NYE	0:1				1:2		1:2		0:2
 2	BOS	SFS	2:3				3:1		2:0	1:2	0:2
 3	SFS	LON					0:1	1:2	0:1		2:1
 3	SHD	SEO	2:1	1:2		2:3					1:2
-3	LAG	VAL			1:2		3:1	3:4	2:0	1:2	
+3	GLA	VAL			1:2		3:1	3:4	2:0	1:2	
