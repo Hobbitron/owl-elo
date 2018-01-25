@@ -42,7 +42,7 @@ lineReader.on('close', function(a) {
     //Save the data
     writeData();
 
-    projectMatchup('FLA', 'LON', ['dorado', 'templeOfAnubis', 'ilios', 'numbani']);
+    projectMatchup('SFS', 'LON', ['junkertown', 'horizonLunarColony', 'oasis', 'eichenwalde']);
 });
 
 function getEloKeys(team) {
@@ -293,9 +293,14 @@ function writeData() {
         }
         redditfriendlymapstandings += name + "|" + r.bestTeam + "|" + r.best.toString().slice(0, 4) + "|" + r.worstTeam + "|" + r.worst.toString().slice(0, 4) + "\r\n";
     }
+    var mdresults = redditfriendlystandings + "\r\n" + redditfriendlymapstandings;
+    fs.writeFile("results.md", mdresults, function(err) {
+        if (err) {
+            return console.log(err);
+        }
 
-    console.log(redditfriendlystandings);
-    console.log(redditfriendlymapstandings);
+        console.log("The file was saved!");
+    });
     output.standings = standings;
     fs.writeFile("output.txt", JSON.stringify(output, null, 2), function(err) {
         if (err) {
@@ -317,8 +322,10 @@ function projectMatchup(team1, team2, maps) {
         var elodiff = t1mapelo - t2mapelo;
         var a = 1 / (Math.pow(10, (-1 * elodiff) / eloConst) + 1)
         overall += a;
+        console.log(maps[i], t1mapelo, t2mapelo, a);
     }
     overall = overall / maps.length * 100;
+    console.log(overall);
 }
 
 
@@ -328,7 +335,7 @@ function expectedScore(r_a, r_b) {
 }
 
 function eloAdjustment(r_a, s_a, e_a) {
-    return 40 * (s_a - e_a);
+    return 30 * (s_a - e_a);
 }
 
 // function calcMapPoints(score_attack, score_defense, mapname) {

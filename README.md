@@ -4,27 +4,29 @@ ELO rankings for OWL
 
 Team|Wins|Losses|ELO
 :---|---:|:----:|:--
-SEO|3|0|1555
-LON|2|0|1540
-VAL|2|0|1537
-NYE|2|0|1537
-PHI|2|1|1520
-GLA|1|1|1500
-BOS|1|1|1500
-HOU|1|2|1482
-SFS|1|2|1480
-DAL|0|2|1462
-FLA|0|3|1444
-SHD|0|3|1440
+NYE|4|0|1574
+SEO|4|0|1572
+LON|4|0|1571
+GLA|2|1|1521
+VAL|2|1|1517
+HOU|2|2|1501
+SFS|2|2|1500
+PHI|2|2|1498
+LAG|0|1|1483
+LAV|0|1|1483
+FLA|1|3|1464
+BOS|1|3|1462
+DAL|0|4|1428
+SHD|0|4|1420
 
 Map|Best Team|Rating|Weakest Team|Rating
 :--|:-------:|:----:|:----------:|-----:
-Dorado|FLA|1556|NYE|1478
-Temple Of Anubis|SFS|1538|BOS|1478
-Ilios|SFS|1540|GLA|1460
-Numbani|VAL|1540|SHD|1458
+Dorado|SHD|1542|NYE|1460
+Temple Of Anubis|SHD|1538|PHI|1461
+Ilios|SFS|1540|GLA|1441
+Numbani|VAL|1557|FLA|1458
 Eichenwalde|FLA|1538|PHI|1461
-Junkertown|SEO|1538|SHD|1461
-Horizon Lunar Colony|HOU|1540|PHI|1461
-Lijiang Tower|PHI|1520|HOU|1480
-Oasis|SFS|1521|SHD|1478
+Junkertown|SEO|1557|SHD|1461
+Horizon Lunar Colony|LAV|1522|BOS|1442
+Lijiang Tower|PHI|1538|SFS|1480
+Oasis|DAL|1540|SHD|1478
