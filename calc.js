@@ -42,7 +42,7 @@ lineReader.on('close', function(a) {
     //Save the data
     writeData();
 
-    projectMatchup('SFS', 'LON', ['junkertown', 'horizonLunarColony', 'oasis', 'eichenwalde']);
+    projectMatchup('BOS', 'LON', ['numbani', 'templeOfAnubis', 'ilios', 'junkertown']);
 });
 
 function getEloKeys(team) {
@@ -131,15 +131,38 @@ function calcTeamData(arr) {
 }
 
 function calcGameData(data, mapname) {
-
     //If it's an empty record bail
     if (!data || data == "") {
         return;
     }
+    var s_o_v = -9999;
 
     //Split on the colon    
     var x = parseInt(data.split(':')[0]);
     var y = parseInt(data.split(':')[1]);
+    var map = maplist[mapname];
+    if (x === y) {
+        s_o_v = 0;
+    } else if (y === 0 || x === 0) {
+        if (map.type === 'hybrid' || map.type === 'escort') {
+            //max 3 points
+            if (x + y === 3) {
+                s_o_v = 3;
+            } else {
+                s_o_v = 2;
+            }
+        } else {
+            //max 2 points available
+            if (x + y === 2) {
+                s_o_v = 3;
+            } else {
+                s_o_v = 2;
+            }
+        }
+    } else {
+        s_o_v = 1;
+    }
+    console.log(mapname, x, y, s_o_v);
     //If the points are equal, it was a tie, and strength of victory is 0
     if (x == y) {
         return .5;
@@ -161,7 +184,7 @@ function adjustElo(teamName, matchData) {
 
     //Go through each map for the match and update the team's map elo
     for (var key in matchData) {
-        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser ' && key != 'tie') {
+        if (key != 'opponent' && key != 'week' && key != 'points' && key != 'winner' && key != 'loser' && key != 'tie') {
             if (isNaN(matchData[key])) {
                 continue;
             }
@@ -188,9 +211,6 @@ function adjustElo(teamName, matchData) {
                 }
             }
             var e_a = expectedScore(winningTeam[key + 'elo'], losingTeam[key + 'elo']);
-            if (team1.name === "SFS" && key === "ilios") {
-                console.log('break');
-            }
             var adjustment = eloAdjustment(winningTeam[key + 'elo'], winningTeam === team1 ? matchData[key] : 1 - matchData[key], e_a);
             //who gets the positive adjustment, who gets negative
             winningTeam[key + 'elo'] += adjustment;
@@ -327,7 +347,10 @@ function projectMatchup(team1, team2, maps) {
         console.log(maps[i], t1mapelo, t2mapelo, a);
     }
     overall = overall / maps.length * 100;
-    console.log(overall);
+    var nonAdjOverall = t1.elo - t2.elo;
+    nonAdjOverall = 1 / (Math.pow(10, (-1 * nonAdjOverall) / eloConst) + 1);
+    nonAdjOverall *= 100;
+    console.log(overall, nonAdjOverall);
 }
 
 
