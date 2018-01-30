@@ -11,7 +11,6 @@ var data = [];
 var teamData = {};
 const baseElo = 1500;
 const eloConst = 400;
-//const maps = ['dorado', 'templeOfAnubis', 'ilios', 'numbani', 'eichenwalde', 'junkertown', 'horizonLunarColony', 'lijiangTower', 'oasis'];
 
 //Read the file
 lineReader.on('line', function(line) {
@@ -42,7 +41,9 @@ lineReader.on('close', function(a) {
     //Save the data
     writeData();
 
-    projectMatchup('BOS', 'LON', ['numbani', 'templeOfAnubis', 'ilios', 'junkertown']);
+    projectMatchup('VAL', 'PHI', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
+    projectMatchup('FLA', 'GLA', ['eichenwalde', 'horizonLunarColony', 'oasis', 'junkertown']);
+    projectMatchup('HOU', 'SFS', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
 });
 
 function getEloKeys(team) {
@@ -70,6 +71,15 @@ function getEloKeys(team) {
 
 function calcTeamData(arr) {
     var matchScore = 0;
+    //Check to see if we've already recorded records for the teams, and init them if needed
+    if (!teamData[arr[1]]) {
+        teamData[arr[1]] = { name: arr[1], elo: baseElo, mapPoints: 0 };
+        teamData[arr[1]].matchData = [];
+    }
+    if (!teamData[arr[2]]) {
+        teamData[arr[2]] = { name: arr[2], elo: baseElo, mapPoints: 0 };
+        teamData[arr[2]].matchData = [];
+    }
     //Create the data point with the match data and Strength of Victory per match
     var datapoint = {
         'opponent': arr[2],
@@ -94,9 +104,31 @@ function calcTeamData(arr) {
             matchScore += mapResult;
             //console.log(mapname, mapResult);
             if (mapResult > 0) {
+                teamData[arr[1]].mapPoints++;
                 datapoint.points++;
+                if (teamData[arr[1]][mapname + 'Points']) {
+                    teamData[arr[1]][mapname + 'Points']++;
+                } else {
+                    teamData[arr[1]][mapname + 'Points'] = 1;
+                }
+                if (teamData[arr[2]][mapname + 'Losses']) {
+                    teamData[arr[2]][mapname + 'Losses']++;
+                } else {
+                    teamData[arr[2]][mapname + 'Losses'] = 1;
+                }
             } else if (mapResult < 0) {
+                if (teamData[arr[2]][mapname + 'Points']) {
+                    teamData[arr[2]][mapname + 'Points']++;
+                } else {
+                    teamData[arr[2]][mapname + 'Points'] = 1;
+                }
+                if (teamData[arr[1]][mapname + 'Losses']) {
+                    teamData[arr[1]][mapname + 'Losses']++;
+                } else {
+                    teamData[arr[1]][mapname + 'Losses'] = 1;
+                }
                 oppdatapoint.points++;
+                teamData[arr[2]].mapPoints++;
             } else {
                 datapoint[mapname] = 0;
                 oppdatapoint[mapname] = 0;
@@ -106,19 +138,12 @@ function calcTeamData(arr) {
         }
     }
 
-    //Check to see if we've already recorded records for the teams, and init them if needed
-    if (!teamData[arr[1]]) {
-        teamData[arr[1]] = { name: arr[1], elo: baseElo };
-        teamData[arr[1]].matchData = [];
-    }
-    if (!teamData[arr[2]]) {
-        teamData[arr[2]] = { name: arr[2], elo: baseElo };
-        teamData[arr[2]].matchData = [];
-    }
+
     //Add the match data to the team
     teamData[arr[1]].matchData.push(datapoint);
     teamData[arr[2]].matchData.push(oppdatapoint);
     if (datapoint.points > oppdatapoint.points) {
+
         matchScore = Math.abs(matchScore) + 4;
         datapoint.score = matchScore;
         oppdatapoint.score = -1 * matchScore;
@@ -226,19 +251,10 @@ function adjustElo(teamName, matchData) {
         }
     }
     var adjustment = 0;
-    if (matchData.loser) {
-        var e_a = expectedMatchScore(team2.elo, team1.elo);
-        adjustment = eloMatchAdjustment(team2.elo, matchData.score, e_a);
-        team1.elo += adjustment;
-        team2.elo -= adjustment;
-    } else if (matchData.winner) {
-        var e_a = expectedMatchScore(team1.elo, team2.elo);
-        adjustment = eloMatchAdjustment(team1.elo, matchData.score, e_a);
-        team2.elo += adjustment;
-        team1.elo -= adjustment;
-    } else {
-        console.log('TIE?!');
-    }
+    var e_a = expectedMatchScore(team2.elo, team1.elo);
+    adjustment = eloMatchAdjustment(team2.elo, matchData.score, e_a);
+    team1.elo += adjustment;
+    team2.elo -= adjustment;
     matchData.adjustment = adjustment;
 }
 
@@ -262,7 +278,7 @@ function calcStandings() {
         team.losses = losses;
     }
     for (var key in teamData) {
-        var standingsRecord = { 'name': teamData[key].name, 'elo': teamData[key].elo, 'wins': teamData[key].wins, 'losses': teamData[key].losses };
+        var standingsRecord = { 'name': teamData[key].name, 'elo': teamData[key].elo, 'wins': teamData[key].wins, 'losses': teamData[key].losses, 'mapPoints': teamData[key].mapPoints };
         if (standings.length === 0) {
             standings.push(standingsRecord);
         } else {
@@ -305,12 +321,12 @@ function writeData() {
     var output = {};
     output.teamData = teamData;
     output.mapData = mapRecords;
-    var redditfriendlystandings = "Team|Wins|Losses|ELO\r\n:---|---:|:----:|:--\r\n";
+    var redditfriendlystandings = "Team|Wins|Losses|ELO|Map Points\r\n:---|---:|:----:|:-:|--------:\r\n";
     redditfriendlystandings += standings.reduce(function(p, c, idx, arr) {
         if (p === standings[0]) {
-            p = p.name + "|" + p.wins + "|" + p.losses + "|" + p.elo.toString().slice(0, 4) + "\r\n";
+            p = p.name + "|" + p.wins + "|" + p.losses + "|" + p.elo.toString().slice(0, 4) + "|" + p.mapPoints.toString() + "\r\n";
         }
-        return p + c.name + "|" + c.wins + "|" + c.losses + "|" + c.elo.toString().slice(0, 4) + "\r\n";
+        return p + c.name + "|" + c.wins + "|" + c.losses + "|" + c.elo.toString().slice(0, 4) + "|" + c.mapPoints.toString() + "\r\n";
     })
     var redditfriendlymapstandings = "Map|Best Team|Rating|Weakest Team|Rating\r\n:--|:-------:|:----:|:----------:|-----:\r\n";
     for (var key in mapRecords) {
@@ -349,19 +365,58 @@ function projectMatchup(team1, team2, maps) {
     console.log(team1, team2);
     var t1 = teamData[team1];
     var t2 = teamData[team2];
+    var t1wins = 0;
+    var t2wins = 0;
     var overall = 0;
     for (var i = 0; i < maps.length; i++) {
         var mapelo = maps[i] + 'elo';
         t1mapelo = t1[mapelo] || 1500;
         t2mapelo = t2[mapelo] || 1500;
         var elodiff = t1mapelo - t2mapelo;
-        var a = 1 / (Math.pow(10, (-1 * elodiff) / eloConst) + 1)
+        var a = 1 / (Math.pow(10, (-1 * elodiff) / eloConst) + 1);
         a = a * 32 - 16;
-        overall += a;
-        console.log(maps[i], t1mapelo, t2mapelo, a);
+        overall += Math.floor(a);
+        if (elodiff > 0) {
+            t1wins++;
+        } else {
+            t2wins++;
+        }
+        var t1pl = t1[maps[i] + 'Points'] ? t1[maps[i] + 'Points'] : '0';
+        t1pl += ':';
+        t1pl += t1[maps[i] + 'Losses'] ? t1[maps[i] + 'Losses'] : '0';
+        var t2pl = t2[maps[i] + 'Points'] ? t2[maps[i] + 'Points'] : '0';
+        t2pl += ':';
+        t2pl += t2[maps[i] + 'Losses'] ? t2[maps[i] + 'Losses'] : '0';
+        //console.log(t1pl, t2pl)
+        console.log(maps[i], Math.floor(t1mapelo), Math.floor(t2mapelo), t1pl, t2pl, a);
+    }
+    if (t1wins === t2wins) {
+        var mapelo = 'lijiangTowerelo';
+        t1mapelo = t1[mapelo] || 1500;
+        t2mapelo = t2[mapelo] || 1500;
+        var elodiff = t1mapelo - t2mapelo;
+        var a = 1 / (Math.pow(10, (-1 * elodiff) / eloConst) + 1);
+        a = a * 32 - 16;
+        overall += Math.floor(a);
+        if (elodiff > 0) {
+            t1wins++;
+        } else {
+            t2wins++;
+        }
+        console.log('lijiangTower', Math.floor(t1mapelo), Math.floor(t2mapelo), a);
+    }
+    if (t1wins > t2wins) {
+        overall += 4;
+    } else {
+        overall -= 4;
     }
     var nonAdjOverall = t1.elo - t2.elo;
-    nonAdjOverall = ((1 / (Math.pow(10, (-1 * nonAdjOverall) / eloConst) + 1)) * 32) - 16;
+    nonAdjOverall = Math.floor(((1 / (Math.pow(10, (-1 * nonAdjOverall) / eloConst) + 1)) * 32) - 16);
+    if (nonAdjOverall > 0) {
+        nonAdjOverall += 4;
+    } else {
+        nonAdjOverall -= 4;
+    }
     console.log(t1.elo, t2.elo, nonAdjOverall);
     //nonAdjOverall *= 100;
     console.log(overall, nonAdjOverall);
@@ -391,88 +446,10 @@ function expectedMapScore(r_a, r_b) {
 
 function eloMapAdjustment(r_a, s_a, e_a) {
     //console.log(r_a, s_a, e_a);
-    return 36 * ((s_a - e_a) / 6);
+    return 50 * ((s_a - e_a) / 6);
 }
 
 function eloMatchAdjustment(r_a, s_a, e_a) {
     //console.log(r_a, s_a, e_a);
-    return 36 * ((s_a - e_a) / 32);
+    return 32 * ((s_a - e_a) / 32);
 }
-
-// function calcMapPoints(score_attack, score_defense, mapname) {
-//     var result = { win: 0, loss: 0, tie: 0, score: 0 };
-//     var map = maplist[mapname];
-//     if (score_attack > score_defense) {
-//         result.win = 1;
-//     } else if (score_attack === score_defense) {
-//         result.tie = 1;
-//     } else {
-//         result.loss = 1;
-//     }
-//     var atkPoints = 0;
-//     var defPoints = 0;
-//     var partialPoints = 0;
-//     switch (map.type.toLowerCase()) {
-//         case "escort":
-//             atkPoints = Math.floor(score_attack / 3) * 12;
-//             partialPonts = score_attack % 3;
-//             if (partialPonts === 1) {
-//                 atkPoints += 2;
-//             } else if (partialPonts === 2) {
-//                 atkPoints += 6;
-//             }
-//             defPoints = Math.floor(score_defense / 3) * 12;
-//             partialPonts = score_defense % 3;
-//             if (partialPonts === 1) {
-//                 defPoints += 2;
-//             } else if (partialPonts === 2) {
-//                 defPoints += 6;
-//             }
-//             break;
-//         case "hybrid":
-//             atkPoints = Math.floor(score_attack / 3) * 12;
-//             partialPonts = score_attack % 3;
-//             if (partialPonts === 1) {
-//                 atkPoints += 2;
-//             } else if (partialPonts === 2) {
-//                 atkPoints += 6;
-//             }
-//             defPoints = Math.floor(score_defense / 3) * 12;
-//             partialPonts = score_defense % 3;
-//             if (partialPonts === 1) {
-//                 defPoints += 2;
-//             } else if (partialPonts === 2) {
-//                 defPoints += 6;
-//             }
-//             break;
-//         case "assault":
-//             atkPoints = Math.floor(score_attack / 2) * 12;
-//             partialPonts = score_attack % 2;
-//             if (partialPonts === 1) {
-//                 atkPoints += 4;
-//             }
-//             defPoints = Math.floor(score_defense / 3) * 12;
-//             partialPonts = score_defense % 2;
-//             if (partialPonts === 1) {
-//                 defPoints += 4;
-//             }
-//             break;
-//         case "control":
-//             atkPoints = Math.floor(score_attack / 2) * 12;
-//             partialPonts = score_attack % 2;
-//             if (partialPonts === 1) {
-//                 atkPoints += 6;
-//             }
-//             defPoints = Math.floor(score_defense / 3) * 12;
-//             partialPonts = score_defense % 2;
-//             if (partialPonts === 1) {
-//                 defPoints += 6;
-//             }
-//             break;
-//         default:
-//             console.log("We shouldn't be here");
-//             break;
-//     }
-//     console.log(score_attack, score_defense, atkPoints - defPoints, map.type);
-//     return atkPoints - defPoints;
-// }
