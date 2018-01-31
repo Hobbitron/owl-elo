@@ -1,9 +1,14 @@
 import * as maplist from "./maplist";
 
+export interface Map {
+    
+}
+
 export class MapResult {    
     public score: number;    
     public mapType: string;
     public id: number;
+    public mapid: number;
     public winningTeamid: number;
     public losingTeamid: number;
     public tie: boolean = false;
@@ -24,6 +29,7 @@ export class MapResult {
             this.tie = true;
         }
         this.id = MapResult.nextid++;
+        this.mapid = maplist[this.mapName]['id'];
     }
 
     private calcScore() {                     

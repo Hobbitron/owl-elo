@@ -1,5 +1,5 @@
 import { Team } from "./team";
-import { MapResult } from "./map";
+import { MapResult } from "./mapresult";
 import { Maps } from "./maps";
 
 enum maps {
@@ -57,11 +57,11 @@ export class Match {
     public oasisScore: number;
     public week: number;
     public id: number;
-    public firstMap: Map;
-    public secondMap: Map;
-    public thirdMap: Map;
-    public fourthMap: Map;
-    public tieBreakerMap: Map;
+    public firstMap: MapResult;
+    public secondMap: MapResult;
+    public thirdMap: MapResult;
+    public fourthMap: MapResult;
+    public tieBreakerMap: MapResult;
     public maps: Maps;
     
     constructor(atts: Array<string>) {
@@ -79,7 +79,7 @@ export class Match {
         this._horizonLunarColonyScore = atts[10];
         this._lijiangTowerScore = atts[11];
         this._oasisScore = atts[12];
-        this.Init();
+        //this.Init();
     }
     private setMap(score: string) {
         var mapName = mapsLookup[score.split(":")[0]];
@@ -90,44 +90,5 @@ export class Match {
             this.maps = new Maps();
         }
         this.maps.push(m);
-    }
-    private Init() {
-        var m: Map;
-        if (this._doradoScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._templeOfAnubisScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._iliosScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._numbaniScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._eichenwaldeScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._junkertownScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._horizonLunarColonyScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._lijiangTowerScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-        if (this._oasisScore) {
-            m = new Map(this._doradoScore, "dorado");
-            this.doradoScore = m.score;
-        }
-    }
+    }    
 }

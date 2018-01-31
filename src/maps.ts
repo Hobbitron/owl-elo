@@ -1,4 +1,4 @@
-import {MapResult} from "./map";
+import {MapResult} from "./mapresult";
 
 export class Maps extends Array<MapResult> {
     constructor() {

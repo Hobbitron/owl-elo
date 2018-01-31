@@ -1,4 +1,5 @@
 import { Match } from "./match";
+import { MapResult } from "./mapresult";
 var Teams = {
     "SFS": {name: "San Francisco Shock", division: "West"},
     "HOU": {name: "Houston Outlaws", division: "West"},
@@ -21,6 +22,7 @@ export class Team {
     public matches: Array<Match>;
     public mapWins: number = 0;
     public mapLosses: number = 0;
+    public elo: number = 1500;
     constructor(public abbreviation: string) {
         this.id = Team.nextid++;
         this.name = Teams[abbreviation];
@@ -30,5 +32,14 @@ export class Team {
             this.matches = new Array<Match>();
         }
         this.matches.push(match);
+        this.updateElo(match);
+    }
+
+    updateElo(match: Match) {
+
+    }
+
+    updateMapElo(res: MapResult) {
+
     }
 }
