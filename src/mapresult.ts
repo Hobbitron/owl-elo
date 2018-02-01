@@ -1,3 +1,4 @@
+import { expectedMapScore, eloMapAdjustment} from "./calc";
 import * as maplist from "./maplist";
 
 export interface Map {
@@ -14,6 +15,8 @@ export class MapResult {
     public tie: boolean = false;
     public homeTeamELO: number;
     public awayTeamELO: number;    
+    public adjustment: number;    
+    public expectedScore: number;
 
     private static nextid: number = 1;
 
@@ -29,13 +32,13 @@ export class MapResult {
             this.tie = true;
         }
         this.id = MapResult.nextid++;
-        this.mapid = maplist[this.mapName]['id'];
+        this.mapid = maplist.default[this.mapName]['id'];
     }
 
     private calcScore() {                     
         var x = this.homePoints;
         var y = this.awayPoints;
-        this.mapType = maplist[this.mapName];
+        this.mapType = maplist.default[this.mapName];
         if (x === y) {
             this.score = 0;
         } else if (y === 0 || x === 0) {
@@ -56,6 +59,14 @@ export class MapResult {
             }
         } else {
             this.score = 1;
-        }        
+        }
+        if (y > x) {
+            this.score *= -1;
+        }
+    }
+
+    public setAdjustment() {
+        this.expectedScore = expectedMapScore(this.homeTeamELO, this.awayTeamELO);
+        this.adjustment = eloMapAdjustment(this.score, this.expectedScore);
     }
 }

@@ -17,10 +17,10 @@ export function expectedMapScore(r_a: number, r_b: number) {
     return e_a;
 }
 
-export function eloMapAdjustment(r_a: number, s_a: number, e_a: number) {    
+export function eloMapAdjustment(s_a: number, e_a: number) {    
     return map_k * ((s_a - e_a) / (map_points * 2));
 }
 
-export function eloMatchAdjustment(r_a: number, s_a: number, e_a: number) {    
+export function eloMatchAdjustment(s_a: number, e_a: number) {    
     return match_k * ((s_a - e_a) / (match_points * 2));
 }

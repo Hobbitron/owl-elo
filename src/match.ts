@@ -1,6 +1,8 @@
 import { Team } from "./team";
+import { Teams } from "./teams";
 import { MapResult } from "./mapresult";
 import { Maps } from "./maps";
+import { expectedMatchScore, eloMatchAdjustment } from "./calc";
 
 enum maps {
     "dorado" = 0,
@@ -22,7 +24,7 @@ var mapsLookup = {
     "EIC": "eichenwalde",
     "JNK": "junkertown",
     "HLC": "horizonLunarColony",
-    "LJT": "lijaingTower",
+    "LJT": "lijiangTower",
     "OAS": "oasis"
 }
 
@@ -40,10 +42,11 @@ export class Match {
     private _oasisScore: string;
 
     public mapCount: number;
-    public mapWins: number;
-    public mapLosses: number;
-    public score: number;
+    public mapWins: number = 0;
+    public mapLosses: number = 0;
+    public score: number = 0;
     public winner: Team;
+    public loser: Team;
     public homeTeam: Team;
     public awayTeam: Team;
     public templeOfAnubisScore: number;
@@ -63,32 +66,73 @@ export class Match {
     public fourthMap: MapResult;
     public tieBreakerMap: MapResult;
     public maps: Maps;
+    public homeTeamELO: number;
+    public awayTeamELO: number;
+    public expectedScore: number;
+    public adjustment: number;
     
     constructor(atts: Array<string>) {
         this.id = parseInt(atts[0]);
         this.week = parseInt(atts[1]);
         this._homeTeam = atts[2];
-        this._awayTeam = atts[3];
-        this.setMap(atts[4]);
-        this._doradoScore = atts[4];
-        this._templeOfAnubisScore = atts[5];
-        this._iliosScore = atts[6];
-        this._numbaniScore = atts[7];
-        this._eichenwaldeScore = atts[8];
-        this._junkertownScore = atts[9];
-        this._horizonLunarColonyScore = atts[10];
-        this._lijiangTowerScore = atts[11];
-        this._oasisScore = atts[12];
-        //this.Init();
+        this.homeTeam = Teams.GetTeam(atts[2]);
+        this._awayTeam = atts[3];        
+        this.awayTeam = Teams.GetTeam(atts[3]);
+        this.homeTeamELO = this.homeTeam.elo;
+        this.awayTeamELO = this.awayTeam.elo;
+        this.firstMap = this.setMap(atts[4]);
+        this.secondMap = this.setMap(atts[5]);
+        this.thirdMap = this.setMap(atts[6]);
+        this.fourthMap = this.setMap(atts[7]);
+        if (atts[8]) {
+            this.tieBreakerMap = this.setMap(atts[8]);
+        }
+        this.finalize();
+        this.setAdjustment();
+        this.homeTeam.addHomeMatch(this);
+        this.awayTeam.addAwayMatch(this);
     }
     private setMap(score: string) {
-        var mapName = mapsLookup[score.split(":")[0]];
-        var homeScore = parseInt(score.split(":")[1]);
-        var awayScore = parseInt(score.split(":")[2]);        
+        var splitchar = score.split(":").length > 1 ? ":" : ";";
+        var mapName = mapsLookup[score.split(splitchar)[0]];
+        if (!mapName) {
+            throw "Couldn't find map for: " + score.split(splitchar)[0];
+        }
+        var homeScore = parseInt(score.split(splitchar)[1]);
+        var awayScore = parseInt(score.split(splitchar)[2]);        
         var m = new MapResult(homeScore, awayScore, mapName, this.homeTeam.id, this.awayTeam.id);
         if (!this.maps) {
             this.maps = new Maps();
         }
+        if (m.winningTeamid === this.homeTeam.id) {
+            this.mapWins++;            
+        } else if (m.tie) {
+
+        } else {
+            this.mapLosses++;
+        }
+        this.score += m.score;
+        m.homeTeamELO = this.homeTeam.getMapElo(mapName);        
+        m.awayTeamELO = this.awayTeam.getMapElo(mapName);
+        m.setAdjustment();
         this.maps.push(m);
+        this.homeTeam.addHomeMap(m);
+        this.awayTeam.addAwayMap(m);        
+        return m;
     }    
+    private finalize() {
+        if (this.mapWins > this.mapLosses) {
+            this.winner = this.homeTeam;
+            this.loser = this.awayTeam;
+            this.score += 4;
+        } else {
+            this.winner = this.awayTeam;
+            this.loser = this.homeTeam;
+            this.score -= 4;
+        }
+    }
+    public setAdjustment() {        
+        this.expectedScore = expectedMatchScore(this.homeTeamELO, this.awayTeamELO);
+        this.adjustment = eloMatchAdjustment(this.score, this.expectedScore);
+    }
 }

@@ -1,7 +1,9 @@
 var fs = require('fs');
 var lineReader = require('readline').createInterface({
-    input: require('fs').createReadStream('data.txt')
+    input: require('fs').createReadStream('data.1.txt')
 });
+var Match = require('./dist/match');
+var Teams = require('./dist/teams');
 
 var maplist = JSON.parse(fs.readFileSync('maps.json', "utf-8"))
     //console.log(maplist);
@@ -14,7 +16,7 @@ const eloConst = 400;
 
 //Read the file
 lineReader.on('line', function(line) {
-    if (line[0] === "W") {
+    if (line[0] === "I") {
         return;
     }
     var arr = [];
@@ -28,22 +30,24 @@ lineReader.on('line', function(line) {
         }
         idx++;
     }
-    //Push data to an array
-    data.push(arr);
-    //Calculate the team's data from the match
-    calcTeamData(arr);
+    var m = new Match.Match(arr);
+    data.push(m);
 });
 lineReader.on('close', function(a) {
+    var a = Teams.Teams.GetStandings();
+    for (var i = 0; i < a.length; i++) {
+        console.log(a[i].abbreviation, Math.floor(a[i].elo), a[i].matchWins, a[i].mapWins);
+    }
     //Update standings
-    calcStandings();
-    //Update highest/lowest performers per map
-    calcMapRecords();
-    //Save the data
-    writeData();
+    // calcStandings();
+    // //Update highest/lowest performers per map
+    // calcMapRecords();
+    // //Save the data
+    // writeData();
 
-    projectMatchup('VAL', 'PHI', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
-    projectMatchup('FLA', 'GLA', ['eichenwalde', 'horizonLunarColony', 'oasis', 'junkertown']);
-    projectMatchup('HOU', 'SFS', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
+    // projectMatchup('VAL', 'PHI', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
+    // projectMatchup('FLA', 'GLA', ['eichenwalde', 'horizonLunarColony', 'oasis', 'junkertown']);
+    // projectMatchup('HOU', 'SFS', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
 });
 
 function getEloKeys(team) {
