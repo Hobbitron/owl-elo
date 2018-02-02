@@ -17,6 +17,7 @@ export class MapResult {
     public awayTeamELO: number;    
     public adjustment: number;    
     public expectedScore: number;
+    public scoreDiff: number;
 
     private static nextid: number = 1;
 
@@ -38,7 +39,7 @@ export class MapResult {
     private calcScore() {                     
         var x = this.homePoints;
         var y = this.awayPoints;
-        this.mapType = maplist.default[this.mapName];
+        this.mapType = maplist.default[this.mapName].type;
         if (x === y) {
             this.score = 0;
         } else if (y === 0 || x === 0) {
@@ -68,5 +69,6 @@ export class MapResult {
     public setAdjustment() {
         this.expectedScore = expectedMapScore(this.homeTeamELO, this.awayTeamELO);
         this.adjustment = eloMapAdjustment(this.score, this.expectedScore);
+        this.scoreDiff = Math.abs(this.expectedScore - this.score);
     }
 }

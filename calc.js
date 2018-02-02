@@ -4,6 +4,7 @@ var lineReader = require('readline').createInterface({
 });
 var Match = require('./dist/match');
 var Teams = require('./dist/teams');
+var Matches = require('./dist/matches');
 
 var maplist = JSON.parse(fs.readFileSync('maps.json', "utf-8"))
     //console.log(maplist);
@@ -11,6 +12,7 @@ var mapRecords = {};
 var standings = [];
 var data = [];
 var teamData = {};
+var Matches = new Matches.Matches();
 const baseElo = 1500;
 const eloConst = 400;
 
@@ -32,18 +34,80 @@ lineReader.on('line', function(line) {
     }
     var m = new Match.Match(arr);
     data.push(m);
+    Matches.push(m);
 });
 lineReader.on('close', function(a) {
+    var upsets = Matches._matches;
+    var standardteamelos = {};
+    var k = 20;
+    var basicelos = {};
+    var basic = upsets.map(function(m) {
+        var homeWinner = m.mapWins > m.mapLosses;
+        var x = {};
+        var homeBeforeElo = basicelos[m._homeTeam] || 1500;
+        var awayBeforeElo = basicelos[m._awayTeam] || 1500;
+        x.winnerElo = m.mapWins > m.mapLosses ? homeBeforeElo : awayBeforeElo;
+        x.loserElo = m.mapWins > m.mapLosses ? awayBeforeElo : homeBeforeElo;
+        x.score = m.mapWins > m.mapLosses ? m.mapWins.toString() + ":" + m.mapLosses.toString() : m.mapLosses.toString() + ":" + m.mapWins.toString();
+        var qA = Math.pow(10, x.winnerElo / 400.0);
+        var qB = Math.pow(10, x.loserElo / 400.0);
+        var qW = qA / (qA + qB);
+        var qL = qB / (qA + qB);
+        x.qW = Math.round(k * (1.0 - qW))
+        x.qL = Math.round(k * (0.0 - qL))
+        x.winnerEloAfter = x.winnerElo + x.qW;
+        x.loserEloAfter = x.loserElo + x.qL;
+        if (homeWinner) {
+            basicelos[m._homeTeam] = x.winnerEloAfter;
+            basicelos[m._awayTeam] = x.loserEloAfter;
+        } else {
+            basicelos[m._homeTeam] = x.loserEloAfter;
+            basicelos[m._awayTeam] = x.winnerEloAfter;
+        }
+        return x;
+    });
+    console.log(basicelos);
+    var standard = upsets.map(function(m) {
+        var x = {};
+        x.score = m.score;
+        x.homeWins = m.mapWins;
+        x.awayWins = m.mapLosses;
+        x.basicSOV = x.homeWins / (x.homeWins + x.awayWins);
+        x.homeBeforeElo = standardteamelos[m._homeTeam] || 1500;
+        x.awayBeforeElo = standardteamelos[m._awayTeam] || 1500;
+        x.pd = Math.abs(m.mapWins - m.mapLosses);
+        x.lpd = Math.log(x.pd + 1);
+        var elow = m.mapWins > m.mapLosses ? x.homeBeforeElo : x.awayBeforeElo;
+        var elol = m.mapWins > m.mapLosses ? x.awayBeforeElo : x.homeBeforeElo;
+        x.eloDiff = x.homeBeforeElo - x.awayBeforeElo;
+        x.md = Math.log(Math.abs(x.homeWins - x.awayWins) + 1) * (2.2 / ((elow - elol) * 0.001 + 2.2));
+        x.expectedScore = (1 / (1 + Math.pow(10, (x.homeBeforeElo - x.awayBeforeElo) / 400)))
+        x.adjustment = (x.basicSOV - x.expectedScore) * k;
+        x.homeAfterElo = x.homeBeforeElo + x.adjustment;
+        x.awayAfterElo = x.awayBeforeElo - x.adjustment;
+        standardteamelos[m._homeTeam] = x.homeAfterElo;
+        standardteamelos[m._awayTeam] = x.awayAfterElo;
+        return x;
+    });
+    //console.log(standard);
+    //console.log(standardteamelos);
+    //console.log(Math.log(2));
+    for (var i = 0; i < upsets.length; i++) {
+        var m = upsets[i];
+        var a = m.mapWins / (m.mapWins + m.mapLosses);
+        //console.log(upsets[i].score);
+    }
     var a = Teams.Teams.GetStandings();
     for (var i = 0; i < a.length; i++) {
-        console.log(a[i].abbreviation, Math.floor(a[i].elo), a[i].matchWins, a[i].mapWins);
+        //console.log(a[i].abbreviation, Math.floor(a[i].elo), a[i].matchWins, a[i].mapWins);
     }
+
     //Update standings
     // calcStandings();
     // //Update highest/lowest performers per map
     // calcMapRecords();
     // //Save the data
-    // writeData();
+    writeData();
 
     // projectMatchup('VAL', 'PHI', ['numbani', 'templeOfAnubis', 'oasis', 'dorado']);
     // projectMatchup('FLA', 'GLA', ['eichenwalde', 'horizonLunarColony', 'oasis', 'junkertown']);
@@ -322,47 +386,61 @@ function calcMapRecords() {
 }
 
 function writeData() {
-    var output = {};
-    output.teamData = teamData;
-    output.mapData = mapRecords;
-    var redditfriendlystandings = "Team|Wins|Losses|ELO|Map Points\r\n:---|---:|:----:|:-:|--------:\r\n";
-    redditfriendlystandings += standings.reduce(function(p, c, idx, arr) {
-        if (p === standings[0]) {
-            p = p.name + "|" + p.wins + "|" + p.losses + "|" + p.elo.toString().slice(0, 4) + "|" + p.mapPoints.toString() + "\r\n";
-        }
-        return p + c.name + "|" + c.wins + "|" + c.losses + "|" + c.elo.toString().slice(0, 4) + "|" + c.mapPoints.toString() + "\r\n";
-    })
-    var redditfriendlymapstandings = "Map|Best Team|Rating|Weakest Team|Rating\r\n:--|:-------:|:----:|:----------:|-----:\r\n";
-    for (var key in mapRecords) {
-        var r = mapRecords[key];
-        if (!r.best) {
-            continue;
-        }
-        var name = r.name[0].toUpperCase();
-        for (var i = 1; i < r.name.length; i++) {
-            if (r.name[i].toUpperCase() === r.name[i]) {
-                name += ' ';
-            }
-            name += r.name[i];
-        }
-        redditfriendlymapstandings += name + "|" + r.bestTeam + "|" + r.best.toString().slice(0, 4) + "|" + r.worstTeam + "|" + r.worst.toString().slice(0, 4) + "\r\n";
-    }
-    var mdresults = redditfriendlystandings + "\r\n" + redditfriendlymapstandings;
-    fs.writeFile("results.md", mdresults, function(err) {
+    fs.writeFile("matches.txt", Matches.toString(), function(err) {
         if (err) {
             return console.log(err);
         }
 
         console.log("The file was saved!");
     });
-    output.standings = standings;
-    fs.writeFile("output.txt", JSON.stringify(output, null, 2), function(err) {
+    fs.writeFile("teams.txt", Teams.Teams.toString(), function(err) {
         if (err) {
             return console.log(err);
         }
 
         console.log("The file was saved!");
     });
+    // var output = {};
+    // output.teamData = teamData;
+    // output.mapData = mapRecords;
+    // var redditfriendlystandings = "Team|Wins|Losses|ELO|Map Points\r\n:---|---:|:----:|:-:|--------:\r\n";
+    // redditfriendlystandings += standings.reduce(function(p, c, idx, arr) {
+    //     if (p === standings[0]) {
+    //         p = p.name + "|" + p.wins + "|" + p.losses + "|" + p.elo.toString().slice(0, 4) + "|" + p.mapPoints.toString() + "\r\n";
+    //     }
+    //     return p + c.name + "|" + c.wins + "|" + c.losses + "|" + c.elo.toString().slice(0, 4) + "|" + c.mapPoints.toString() + "\r\n";
+    // })
+    // var redditfriendlymapstandings = "Map|Best Team|Rating|Weakest Team|Rating\r\n:--|:-------:|:----:|:----------:|-----:\r\n";
+    // for (var key in mapRecords) {
+    //     var r = mapRecords[key];
+    //     if (!r.best) {
+    //         continue;
+    //     }
+    //     var name = r.name[0].toUpperCase();
+    //     for (var i = 1; i < r.name.length; i++) {
+    //         if (r.name[i].toUpperCase() === r.name[i]) {
+    //             name += ' ';
+    //         }
+    //         name += r.name[i];
+    //     }
+    //     redditfriendlymapstandings += name + "|" + r.bestTeam + "|" + r.best.toString().slice(0, 4) + "|" + r.worstTeam + "|" + r.worst.toString().slice(0, 4) + "\r\n";
+    // }
+    // var mdresults = redditfriendlystandings + "\r\n" + redditfriendlymapstandings;
+    // fs.writeFile("results.md", mdresults, function(err) {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+
+    //     console.log("The file was saved!");
+    // });
+    // output.standings = standings;
+    // fs.writeFile("output.txt", JSON.stringify(output, null, 2), function(err) {
+    //     if (err) {
+    //         return console.log(err);
+    //     }
+
+    //     console.log("The file was saved!");
+    // });
 }
 
 function projectMatchup(team1, team2, maps) {

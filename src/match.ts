@@ -45,10 +45,13 @@ export class Match {
     public mapWins: number = 0;
     public mapLosses: number = 0;
     public score: number = 0;
+    public scoreDiff: number;
     public winner: Team;
     public loser: Team;
     public homeTeam: Team;
     public awayTeam: Team;
+    public homeTeamID: number;
+    public awayTeamID: number;
     public templeOfAnubisScore: number;
     public doradoScore: number;
     public iliosScore: number;
@@ -78,6 +81,8 @@ export class Match {
         this.homeTeam = Teams.GetTeam(atts[2]);
         this._awayTeam = atts[3];        
         this.awayTeam = Teams.GetTeam(atts[3]);
+        this.homeTeamID = this.homeTeam.id;
+        this.awayTeamID = this.awayTeam.id;
         this.homeTeamELO = this.homeTeam.elo;
         this.awayTeamELO = this.awayTeam.elo;
         this.firstMap = this.setMap(atts[4]);
@@ -134,5 +139,22 @@ export class Match {
     public setAdjustment() {        
         this.expectedScore = expectedMatchScore(this.homeTeamELO, this.awayTeamELO);
         this.adjustment = eloMatchAdjustment(this.score, this.expectedScore);
+        this.scoreDiff = Math.abs(this.expectedScore - this.score);
+    }
+    public toString() {
+        let homeTeam = this.homeTeam;
+        let awayTeam = this.awayTeam;
+        let winner = this.winner;
+        let loser = this.loser;
+        delete this.homeTeam;
+        delete this.awayTeam;
+        delete this.winner;
+        delete this.loser;
+        var returnString = JSON.stringify(this, null, 2);
+        this.homeTeam = homeTeam;
+        this.awayTeam = awayTeam;
+        this.winner = winner;
+        this.loser = loser;
+        return returnString
     }
 }

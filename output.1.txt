@@ -1,0 +1,7062 @@
+[
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -8,
+    "id": 1,
+    "week": 1,
+    "_homeTeam": "SFS",
+    "_awayTeam": "VAL",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "dorado",
+          "homeTeamid": 1,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 1,
+          "id": 1,
+          "mapid": 1,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 4,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 1,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 1,
+          "id": 2,
+          "mapid": 2,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 1,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 1,
+          "id": 3,
+          "mapid": 3,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "numbani",
+          "homeTeamid": 1,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 1,
+          "id": 4,
+          "mapid": 4,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "dorado",
+      "homeTeamid": 1,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 1,
+      "id": 1,
+      "mapid": 1,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 3,
+      "awayPoints": 4,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 1,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 1,
+      "id": 2,
+      "mapid": 2,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 1,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 1,
+      "id": 3,
+      "mapid": 3,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "numbani",
+      "homeTeamid": 1,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 1,
+      "id": 4,
+      "mapid": 4,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "expectedScore": 0,
+    "adjustment": -7.5
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -12,
+    "id": 2,
+    "week": 1,
+    "_homeTeam": "SHD",
+    "_awayTeam": "GLA",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "dorado",
+          "homeTeamid": 3,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -2,
+          "winningTeamid": 4,
+          "losingTeamid": 3,
+          "id": 5,
+          "mapid": 1,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -16.666666666666664
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 3,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 4,
+          "losingTeamid": 3,
+          "id": 6,
+          "mapid": 2,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 3,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 4,
+          "losingTeamid": 3,
+          "id": 7,
+          "mapid": 3,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -25
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 3,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -2,
+          "winningTeamid": 4,
+          "losingTeamid": 3,
+          "id": 8,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -16.666666666666664
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "dorado",
+      "homeTeamid": 3,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -2,
+      "winningTeamid": 4,
+      "losingTeamid": 3,
+      "id": 5,
+      "mapid": 1,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -16.666666666666664
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 3,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 4,
+      "losingTeamid": 3,
+      "id": 6,
+      "mapid": 2,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 3,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 4,
+      "losingTeamid": 3,
+      "id": 7,
+      "mapid": 3,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -25
+    },
+    "fourthMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 3,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -2,
+      "winningTeamid": 4,
+      "losingTeamid": 3,
+      "id": 8,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -16.666666666666664
+    },
+    "expectedScore": 0,
+    "adjustment": -11.25
+  },
+  {
+    "mapWins": 1,
+    "mapLosses": 2,
+    "score": -7,
+    "id": 3,
+    "week": 1,
+    "_homeTeam": "DAL",
+    "_awayTeam": "SEO",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 5,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 5,
+          "losingTeamid": 6,
+          "id": 9,
+          "mapid": 6,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 5,
+          "awayPoints": 6,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 5,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 5,
+          "id": 10,
+          "mapid": 2,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 5,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 6,
+          "losingTeamid": 5,
+          "id": 11,
+          "mapid": 3,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -25
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 3,
+          "mapName": "numbani",
+          "homeTeamid": 5,
+          "awayTeamid": 6,
+          "tie": true,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 0,
+          "id": 12,
+          "mapid": 4,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 0
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 5,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 5,
+      "losingTeamid": 6,
+      "id": 9,
+      "mapid": 6,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 5,
+      "awayPoints": 6,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 5,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 5,
+      "id": 10,
+      "mapid": 2,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 5,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 6,
+      "losingTeamid": 5,
+      "id": 11,
+      "mapid": 3,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -25
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 3,
+      "mapName": "numbani",
+      "homeTeamid": 5,
+      "awayTeamid": 6,
+      "tie": true,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 0,
+      "id": 12,
+      "mapid": 4,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 0
+    },
+    "expectedScore": 0,
+    "adjustment": -6.5625
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 1,
+    "score": 9,
+    "id": 4,
+    "week": 1,
+    "_homeTeam": "LON",
+    "_awayTeam": "FLA",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "dorado",
+          "homeTeamid": 7,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 8,
+          "losingTeamid": 7,
+          "id": 13,
+          "mapid": 1,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 7,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 7,
+          "losingTeamid": 8,
+          "id": 14,
+          "mapid": 2,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "oasis",
+          "homeTeamid": 7,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 7,
+          "losingTeamid": 8,
+          "id": 15,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 25
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "numbani",
+          "homeTeamid": 7,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 2,
+          "winningTeamid": 7,
+          "losingTeamid": 8,
+          "id": 16,
+          "mapid": 4,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 16.666666666666664
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "dorado",
+      "homeTeamid": 7,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 8,
+      "losingTeamid": 7,
+      "id": 13,
+      "mapid": 1,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 7,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 7,
+      "losingTeamid": 8,
+      "id": 14,
+      "mapid": 2,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "oasis",
+      "homeTeamid": 7,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 7,
+      "losingTeamid": 8,
+      "id": 15,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 25
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "numbani",
+      "homeTeamid": 7,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 2,
+      "winningTeamid": 7,
+      "losingTeamid": 8,
+      "id": 16,
+      "mapid": 4,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 16.666666666666664
+    },
+    "expectedScore": 0,
+    "adjustment": 8.4375
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 2,
+    "score": 9,
+    "id": 5,
+    "week": 1,
+    "_homeTeam": "PHI",
+    "_awayTeam": "HOU",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "dorado",
+          "homeTeamid": 9,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 9,
+          "losingTeamid": 10,
+          "id": 17,
+          "mapid": 1,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 9,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 9,
+          "id": 18,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "oasis",
+          "homeTeamid": 9,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 9,
+          "losingTeamid": 10,
+          "id": 19,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 25
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 4,
+          "mapName": "eichenwalde",
+          "homeTeamid": 9,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 9,
+          "id": 20,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "lijiangTower",
+          "homeTeamid": 9,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 9,
+          "losingTeamid": 10,
+          "id": 21,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 25
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "dorado",
+      "homeTeamid": 9,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 9,
+      "losingTeamid": 10,
+      "id": 17,
+      "mapid": 1,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 9,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 9,
+      "id": 18,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "oasis",
+      "homeTeamid": 9,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 9,
+      "losingTeamid": 10,
+      "id": 19,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 25
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 4,
+      "mapName": "eichenwalde",
+      "homeTeamid": 9,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 9,
+      "id": 20,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "tieBreakerMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "lijiangTower",
+      "homeTeamid": 9,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 9,
+      "losingTeamid": 10,
+      "id": 21,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 25
+    },
+    "expectedScore": 0,
+    "adjustment": 8.4375
+  },
+  {
+    "mapWins": 1,
+    "mapLosses": 3,
+    "score": -8,
+    "id": 6,
+    "week": 1,
+    "_homeTeam": "BOS",
+    "_awayTeam": "NYE",
+    "homeTeamELO": 1500,
+    "awayTeamELO": 1500,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "junkertown",
+          "homeTeamid": 11,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 11,
+          "id": 22,
+          "mapid": 6,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        },
+        {
+          "homePoints": 4,
+          "awayPoints": 3,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 11,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 11,
+          "losingTeamid": 12,
+          "id": 23,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 11,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 12,
+          "losingTeamid": 11,
+          "id": 24,
+          "mapid": 3,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -25
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "numbani",
+          "homeTeamid": 11,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 11,
+          "id": 25,
+          "mapid": 4,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "junkertown",
+      "homeTeamid": 11,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 11,
+      "id": 22,
+      "mapid": 6,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 4,
+      "awayPoints": 3,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 11,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 11,
+      "losingTeamid": 12,
+      "id": 23,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 11,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 12,
+      "losingTeamid": 11,
+      "id": 24,
+      "mapid": 3,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -25
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "numbani",
+      "homeTeamid": 11,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 11,
+      "id": 25,
+      "mapid": 4,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "expectedScore": 0,
+    "adjustment": -7.5
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 0,
+    "score": 10,
+    "id": 7,
+    "week": 1,
+    "_homeTeam": "VAL",
+    "_awayTeam": "DAL",
+    "homeTeamELO": 1507.5,
+    "awayTeamELO": 1493.4375,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 8,
+          "awayPoints": 7,
+          "mapName": "junkertown",
+          "homeTeamid": 2,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 2,
+          "losingTeamid": 5,
+          "id": 26,
+          "mapid": 6,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": 8.932849906527455
+        },
+        {
+          "homePoints": 5,
+          "awayPoints": 5,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 2,
+          "awayTeamid": 5,
+          "tie": true,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 0,
+          "id": 27,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 0
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 2,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 2,
+          "losingTeamid": 5,
+          "id": 28,
+          "mapid": 3,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1475,
+          "expectedScore": 0.2869432690158087,
+          "adjustment": 22.608806091534927
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "numbani",
+          "homeTeamid": 2,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 2,
+          "winningTeamid": 2,
+          "losingTeamid": 5,
+          "id": 29,
+          "mapid": 4,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": 16.06715009347255
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 8,
+      "awayPoints": 7,
+      "mapName": "junkertown",
+      "homeTeamid": 2,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 2,
+      "losingTeamid": 5,
+      "id": 26,
+      "mapid": 6,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": 8.932849906527455
+    },
+    "secondMap": {
+      "homePoints": 5,
+      "awayPoints": 5,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 2,
+      "awayTeamid": 5,
+      "tie": true,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 0,
+      "id": 27,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 0
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 2,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 2,
+      "losingTeamid": 5,
+      "id": 28,
+      "mapid": 3,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1475,
+      "expectedScore": 0.2869432690158087,
+      "adjustment": 22.608806091534927
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "numbani",
+      "homeTeamid": 2,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 2,
+      "winningTeamid": 2,
+      "losingTeamid": 5,
+      "id": 29,
+      "mapid": 4,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": 16.06715009347255
+    },
+    "expectedScore": 0.6472486473150063,
+    "adjustment": 8.768204393142181
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -10,
+    "id": 8,
+    "week": 1,
+    "_homeTeam": "FLA",
+    "_awayTeam": "BOS",
+    "homeTeamELO": 1491.5625,
+    "awayTeamELO": 1492.5,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "dorado",
+          "homeTeamid": 8,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 11,
+          "losingTeamid": 8,
+          "id": 30,
+          "mapid": 1,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": -8.932849906527451
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 8,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 11,
+          "losingTeamid": 8,
+          "id": 31,
+          "mapid": 2,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -7.733816760139211
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 8,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 11,
+          "losingTeamid": 8,
+          "id": 32,
+          "mapid": 9,
+          "homeTeamELO": 1475,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.2154955616706138,
+          "adjustment": -23.204203652744884
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "eichenwalde",
+          "homeTeamid": 8,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 11,
+          "losingTeamid": 8,
+          "id": 33,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "dorado",
+      "homeTeamid": 8,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 11,
+      "losingTeamid": 8,
+      "id": 30,
+      "mapid": 1,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": -8.932849906527451
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 8,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 11,
+      "losingTeamid": 8,
+      "id": 31,
+      "mapid": 2,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -7.733816760139211
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 8,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 11,
+      "losingTeamid": 8,
+      "id": 32,
+      "mapid": 9,
+      "homeTeamELO": 1475,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.2154955616706138,
+      "adjustment": -23.204203652744884
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "eichenwalde",
+      "homeTeamid": 8,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 11,
+      "losingTeamid": 8,
+      "id": 33,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "expectedScore": -0.04317336571122432,
+    "adjustment": -9.334524969645727
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 1,
+    "score": 7,
+    "id": 9,
+    "week": 1,
+    "_homeTeam": "SFS",
+    "_awayTeam": "SHD",
+    "homeTeamELO": 1492.5,
+    "awayTeamELO": 1488.75,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "junkertown",
+          "homeTeamid": 1,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 1,
+          "losingTeamid": 3,
+          "id": 34,
+          "mapid": 6,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 1,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -2,
+          "winningTeamid": 3,
+          "losingTeamid": 1,
+          "id": 35,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -16.666666666666664
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 1,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 1,
+          "losingTeamid": 3,
+          "id": 36,
+          "mapid": 3,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1475,
+          "expectedScore": 0.14380128144810378,
+          "adjustment": 23.80165598793247
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "numbani",
+          "homeTeamid": 1,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 1,
+          "losingTeamid": 3,
+          "id": 37,
+          "mapid": 4,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": 8.932849906527455
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "junkertown",
+      "homeTeamid": 1,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 1,
+      "losingTeamid": 3,
+      "id": 34,
+      "mapid": 6,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 1,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -2,
+      "winningTeamid": 3,
+      "losingTeamid": 1,
+      "id": 35,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -16.666666666666664
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 1,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 1,
+      "losingTeamid": 3,
+      "id": 36,
+      "mapid": 3,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1475,
+      "expectedScore": 0.14380128144810378,
+      "adjustment": 23.80165598793247
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "numbani",
+      "homeTeamid": 1,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 1,
+      "losingTeamid": 3,
+      "id": 37,
+      "mapid": 4,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": 8.932849906527455
+    },
+    "expectedScore": 0.17268717619304041,
+    "adjustment": 6.400605772319024
+  },
+  {
+    "mapWins": 4,
+    "mapLosses": 0,
+    "score": 13,
+    "id": 10,
+    "week": 1,
+    "_homeTeam": "LON",
+    "_awayTeam": "PHI",
+    "homeTeamELO": 1508.4375,
+    "awayTeamELO": 1508.4375,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 7,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 7,
+          "losingTeamid": 9,
+          "id": 38,
+          "mapid": 6,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 7,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 7,
+          "losingTeamid": 9,
+          "id": 39,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": 24.400483426805884
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 7,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 7,
+          "losingTeamid": 9,
+          "id": 40,
+          "mapid": 3,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 25
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "numbani",
+          "homeTeamid": 7,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 2,
+          "winningTeamid": 7,
+          "losingTeamid": 9,
+          "id": 41,
+          "mapid": 4,
+          "homeTeamELO": 1516.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.14380128144810378,
+          "adjustment": 15.468322654599135
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 7,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 7,
+      "losingTeamid": 9,
+      "id": 38,
+      "mapid": 6,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 7,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 7,
+      "losingTeamid": 9,
+      "id": 39,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": 24.400483426805884
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 7,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 7,
+      "losingTeamid": 9,
+      "id": 40,
+      "mapid": 3,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 25
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "numbani",
+      "homeTeamid": 7,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 2,
+      "winningTeamid": 7,
+      "losingTeamid": 9,
+      "id": 41,
+      "mapid": 4,
+      "homeTeamELO": 1516.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.14380128144810378,
+      "adjustment": 15.468322654599135
+    },
+    "expectedScore": 0,
+    "adjustment": 12.1875
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 1,
+    "score": 8,
+    "id": 11,
+    "week": 1,
+    "_homeTeam": "NYE",
+    "_awayTeam": "HOU",
+    "homeTeamELO": 1507.5,
+    "awayTeamELO": 1491.5625,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "junkertown",
+          "homeTeamid": 12,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 12,
+          "id": 42,
+          "mapid": 6,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": -8.932849906527451
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 12,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 12,
+          "losingTeamid": 10,
+          "id": 43,
+          "mapid": 2,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 12,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 12,
+          "losingTeamid": 10,
+          "id": 44,
+          "mapid": 3,
+          "homeTeamELO": 1525,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.2154955616706138,
+          "adjustment": 23.204203652744884
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "numbani",
+          "homeTeamid": 12,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 12,
+          "losingTeamid": 10,
+          "id": 45,
+          "mapid": 4,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": 7.733816760139216
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "junkertown",
+      "homeTeamid": 12,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 12,
+      "id": 42,
+      "mapid": 6,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": -8.932849906527451
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 12,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 12,
+      "losingTeamid": 10,
+      "id": 43,
+      "mapid": 2,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 12,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 12,
+      "losingTeamid": 10,
+      "id": 44,
+      "mapid": 3,
+      "homeTeamELO": 1525,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.2154955616706138,
+      "adjustment": 23.204203652744884
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "numbani",
+      "homeTeamid": 12,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 12,
+      "losingTeamid": 10,
+      "id": 45,
+      "mapid": 4,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": 7.733816760139216
+    },
+    "expectedScore": 0.7334346338259579,
+    "adjustment": 6.812405030788165
+  },
+  {
+    "mapWins": 4,
+    "mapLosses": 0,
+    "score": 11,
+    "id": 12,
+    "week": 1,
+    "_homeTeam": "SEO",
+    "_awayTeam": "GLA",
+    "homeTeamELO": 1506.5625,
+    "awayTeamELO": 1511.25,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 4,
+          "awayPoints": 3,
+          "mapName": "junkertown",
+          "homeTeamid": 6,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 4,
+          "id": 46,
+          "mapid": 6,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": 8.932849906527455
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 6,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 4,
+          "id": 47,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 6,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 6,
+          "losingTeamid": 4,
+          "id": 48,
+          "mapid": 3,
+          "homeTeamELO": 1525,
+          "awayTeamELO": 1525,
+          "expectedScore": 0,
+          "adjustment": 25
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "numbani",
+          "homeTeamid": 6,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 2,
+          "winningTeamid": 6,
+          "losingTeamid": 4,
+          "id": 49,
+          "mapid": 4,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 16.666666666666664
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 4,
+      "awayPoints": 3,
+      "mapName": "junkertown",
+      "homeTeamid": 6,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 4,
+      "id": 46,
+      "mapid": 6,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": 8.932849906527455
+    },
+    "secondMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 6,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 4,
+      "id": 47,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 6,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 6,
+      "losingTeamid": 4,
+      "id": 48,
+      "mapid": 3,
+      "homeTeamELO": 1525,
+      "awayTeamELO": 1525,
+      "expectedScore": 0,
+      "adjustment": 25
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "numbani",
+      "homeTeamid": 6,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 2,
+      "winningTeamid": 6,
+      "losingTeamid": 4,
+      "id": 49,
+      "mapid": 4,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 16.666666666666664
+    },
+    "expectedScore": -0.21585425558195226,
+    "adjustment": 10.51486336460808
+  },
+  {
+    "mapWins": 1,
+    "mapLosses": 2,
+    "score": -4,
+    "id": 13,
+    "week": 2,
+    "_homeTeam": "SFS",
+    "_awayTeam": "PHI",
+    "homeTeamELO": 1498.900605772319,
+    "awayTeamELO": 1496.25,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 0,
+          "mapName": "dorado",
+          "homeTeamid": 1,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": 2,
+          "winningTeamid": 1,
+          "losingTeamid": 9,
+          "id": 50,
+          "mapid": 1,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.143801281448102,
+          "adjustment": 17.865010678734183
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 1,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 9,
+          "losingTeamid": 1,
+          "id": 51,
+          "mapid": 2,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -7.733816760139211
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 1,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 9,
+          "losingTeamid": 1,
+          "id": 52,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1525,
+          "expectedScore": -0.2154955616706138,
+          "adjustment": -6.537536986078218
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 3,
+          "mapName": "eichenwalde",
+          "homeTeamid": 1,
+          "awayTeamid": 9,
+          "tie": true,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 0,
+          "id": 53,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.07194198878329416,
+          "adjustment": -0.5995165731941181
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 0,
+      "mapName": "dorado",
+      "homeTeamid": 1,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": 2,
+      "winningTeamid": 1,
+      "losingTeamid": 9,
+      "id": 50,
+      "mapid": 1,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.143801281448102,
+      "adjustment": 17.865010678734183
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 1,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 9,
+      "losingTeamid": 1,
+      "id": 51,
+      "mapid": 2,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -7.733816760139211
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 1,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 9,
+      "losingTeamid": 1,
+      "id": 52,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1525,
+      "expectedScore": -0.2154955616706138,
+      "adjustment": -6.537536986078218
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 3,
+      "mapName": "eichenwalde",
+      "homeTeamid": 1,
+      "awayTeamid": 9,
+      "tie": true,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 0,
+      "id": 53,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.07194198878329416,
+      "adjustment": -0.5995165731941181
+    },
+    "expectedScore": 0.12206253866890293,
+    "adjustment": -3.8644336300020967
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -10,
+    "id": 14,
+    "week": 2,
+    "_homeTeam": "FLA",
+    "_awayTeam": "SEO",
+    "homeTeamELO": 1482.2279750303542,
+    "awayTeamELO": 1517.0773633646081,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "dorado",
+          "homeTeamid": 8,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 8,
+          "id": 54,
+          "mapid": 1,
+          "homeTeamELO": 1499.4004834268057,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.005176637078814217,
+          "adjustment": -8.290194691009882
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 8,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 8,
+          "id": 55,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -7.733816760139211
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 8,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 6,
+          "losingTeamid": 8,
+          "id": 56,
+          "mapid": 9,
+          "homeTeamELO": 1451.7957963472552,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.41357821666062966,
+          "adjustment": -21.553514861161418
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "eichenwalde",
+          "homeTeamid": 8,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 8,
+          "id": 57,
+          "mapid": 5,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -7.733816760139211
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "dorado",
+      "homeTeamid": 8,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 8,
+      "id": 54,
+      "mapid": 1,
+      "homeTeamELO": 1499.4004834268057,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.005176637078814217,
+      "adjustment": -8.290194691009882
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 8,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 8,
+      "id": 55,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -7.733816760139211
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 8,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 6,
+      "losingTeamid": 8,
+      "id": 56,
+      "mapid": 9,
+      "homeTeamELO": 1451.7957963472552,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.41357821666062966,
+      "adjustment": -21.553514861161418
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "eichenwalde",
+      "homeTeamid": 8,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 8,
+      "id": 57,
+      "mapid": 5,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -7.733816760139211
+    },
+    "expectedScore": -1.5995129955952052,
+    "adjustment": -7.875456566629495
+  },
+  {
+    "mapWins": 4,
+    "mapLosses": 0,
+    "score": 11,
+    "id": 15,
+    "week": 2,
+    "_homeTeam": "HOU",
+    "_awayTeam": "SHD",
+    "homeTeamELO": 1484.750094969212,
+    "awayTeamELO": 1482.349394227681,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "junkertown",
+          "homeTeamid": 10,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 2,
+          "winningTeamid": 10,
+          "losingTeamid": 3,
+          "id": 58,
+          "mapid": 6,
+          "homeTeamELO": 1508.9328499065275,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.14896559730023062,
+          "adjustment": 15.425286689164745
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 10,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 10,
+          "losingTeamid": 3,
+          "id": 59,
+          "mapid": 7,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1516.6666666666667,
+          "expectedScore": -0.07194198878329683,
+          "adjustment": 8.932849906527473
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "oasis",
+          "homeTeamid": 10,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 10,
+          "losingTeamid": 3,
+          "id": 60,
+          "mapid": 9,
+          "homeTeamELO": 1475,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.2154955616706138,
+          "adjustment": 26.795796347255113
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "numbani",
+          "homeTeamid": 10,
+          "awayTeamid": 3,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 10,
+          "losingTeamid": 3,
+          "id": 61,
+          "mapid": 4,
+          "homeTeamELO": 1492.2661832398608,
+          "awayTeamELO": 1491.0671500934725,
+          "expectedScore": 0.010353243330762929,
+          "adjustment": 8.247056305576976
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "junkertown",
+      "homeTeamid": 10,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 2,
+      "winningTeamid": 10,
+      "losingTeamid": 3,
+      "id": 58,
+      "mapid": 6,
+      "homeTeamELO": 1508.9328499065275,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.14896559730023062,
+      "adjustment": 15.425286689164745
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 10,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 10,
+      "losingTeamid": 3,
+      "id": 59,
+      "mapid": 7,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1516.6666666666667,
+      "expectedScore": -0.07194198878329683,
+      "adjustment": 8.932849906527473
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "oasis",
+      "homeTeamid": 10,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 10,
+      "losingTeamid": 3,
+      "id": 60,
+      "mapid": 9,
+      "homeTeamELO": 1475,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.2154955616706138,
+      "adjustment": 26.795796347255113
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "numbani",
+      "homeTeamid": 10,
+      "awayTeamid": 3,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 10,
+      "losingTeamid": 3,
+      "id": 61,
+      "mapid": 4,
+      "homeTeamELO": 1492.2661832398608,
+      "awayTeamELO": 1491.0671500934725,
+      "expectedScore": 0.010353243330762929,
+      "adjustment": 8.247056305576976
+    },
+    "expectedScore": 0.1105545953347793,
+    "adjustment": 10.208855066873644
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -11,
+    "id": 16,
+    "week": 2,
+    "_homeTeam": "DAL",
+    "_awayTeam": "HOU",
+    "homeTeamELO": 1484.6692956068578,
+    "awayTeamELO": 1494.9589500360855,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "junkertown",
+          "homeTeamid": 5,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -2,
+          "winningTeamid": 10,
+          "losingTeamid": 5,
+          "id": 62,
+          "mapid": 6,
+          "homeTeamELO": 1499.4004834268057,
+          "awayTeamELO": 1524.3581365956923,
+          "expectedScore": -0.2151317932512642,
+          "adjustment": -14.873901722906133
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 5,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 5,
+          "id": 63,
+          "mapid": 7,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1517.2661832398608,
+          "expectedScore": -0.14896559730023107,
+          "adjustment": -7.091953355831408
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 5,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 10,
+          "losingTeamid": 5,
+          "id": 64,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1501.7957963472552,
+          "expectedScore": -0.0155060140380483,
+          "adjustment": -24.870783216349597
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "eichenwalde",
+          "homeTeamid": 5,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 5,
+          "id": 65,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -7.733816760139211
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "junkertown",
+      "homeTeamid": 5,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -2,
+      "winningTeamid": 10,
+      "losingTeamid": 5,
+      "id": 62,
+      "mapid": 6,
+      "homeTeamELO": 1499.4004834268057,
+      "awayTeamELO": 1524.3581365956923,
+      "expectedScore": -0.2151317932512642,
+      "adjustment": -14.873901722906133
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 5,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 5,
+      "id": 63,
+      "mapid": 7,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1517.2661832398608,
+      "expectedScore": -0.14896559730023107,
+      "adjustment": -7.091953355831408
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 5,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 10,
+      "losingTeamid": 5,
+      "id": 64,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1501.7957963472552,
+      "expectedScore": -0.0155060140380483,
+      "adjustment": -24.870783216349597
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "eichenwalde",
+      "homeTeamid": 5,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 5,
+      "id": 65,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -7.733816760139211
+    },
+    "expectedScore": -0.47371760564203313,
+    "adjustment": -9.868389744710594
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 0,
+    "score": 8,
+    "id": 17,
+    "week": 2,
+    "_homeTeam": "NYE",
+    "_awayTeam": "VAL",
+    "homeTeamELO": 1514.312405030788,
+    "awayTeamELO": 1516.2682043931422,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "junkertown",
+          "homeTeamid": 12,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 12,
+          "losingTeamid": 2,
+          "id": 66,
+          "mapid": 6,
+          "homeTeamELO": 1499.4004834268057,
+          "awayTeamELO": 1508.9328499065275,
+          "expectedScore": -0.08228842198903008,
+          "adjustment": 9.019070183241917
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 12,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 2,
+          "winningTeamid": 12,
+          "losingTeamid": 2,
+          "id": 67,
+          "mapid": 7,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": 17.266183239860787
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "oasis",
+          "homeTeamid": 12,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 1,
+          "winningTeamid": 12,
+          "losingTeamid": 2,
+          "id": 68,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 3,
+          "mapName": "eichenwalde",
+          "homeTeamid": 12,
+          "awayTeamid": 2,
+          "tie": true,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 0,
+          "id": 69,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 0
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "junkertown",
+      "homeTeamid": 12,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 12,
+      "losingTeamid": 2,
+      "id": 66,
+      "mapid": 6,
+      "homeTeamELO": 1499.4004834268057,
+      "awayTeamELO": 1508.9328499065275,
+      "expectedScore": -0.08228842198903008,
+      "adjustment": 9.019070183241917
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 12,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 2,
+      "winningTeamid": 12,
+      "losingTeamid": 2,
+      "id": 67,
+      "mapid": 7,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": 17.266183239860787
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "oasis",
+      "homeTeamid": 12,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 1,
+      "winningTeamid": 12,
+      "losingTeamid": 2,
+      "id": 68,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 3,
+      "mapName": "eichenwalde",
+      "homeTeamid": 12,
+      "awayTeamid": 2,
+      "tie": true,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 0,
+      "id": 69,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 0
+    },
+    "expectedScore": -0.09006693777651087,
+    "adjustment": 7.584437754165479
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -7,
+    "id": 18,
+    "week": 2,
+    "_homeTeam": "PHI",
+    "_awayTeam": "GLA",
+    "homeTeamELO": 1500.1144336300022,
+    "awayTeamELO": 1500.7351366353919,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "junkertown",
+          "homeTeamid": 9,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 9,
+          "losingTeamid": 4,
+          "id": 70,
+          "mapid": 6,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1491.0671500934725,
+          "expectedScore": 0.005176637078814217,
+          "adjustment": 8.290194691009882
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 9,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 9,
+          "losingTeamid": 4,
+          "id": 71,
+          "mapid": 2,
+          "homeTeamELO": 1507.7338167601392,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.005176637078813329,
+          "adjustment": 8.376471975656779
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 9,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 4,
+          "losingTeamid": 9,
+          "id": 72,
+          "mapid": 3,
+          "homeTeamELO": 1475,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.2154955616706138,
+          "adjustment": -6.537536986078218
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "numbani",
+          "homeTeamid": 9,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 4,
+          "losingTeamid": 9,
+          "id": 73,
+          "mapid": 4,
+          "homeTeamELO": 1484.5316773454008,
+          "awayTeamELO": 1483.3333333333333,
+          "expectedScore": 0.010347292937539443,
+          "adjustment": -8.419560774479496
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 9,
+          "awayTeamid": 4,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 4,
+          "losingTeamid": 9,
+          "id": 74,
+          "mapid": 8,
+          "homeTeamELO": 1525,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.2154955616706138,
+          "adjustment": -26.795796347255113
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "junkertown",
+      "homeTeamid": 9,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 9,
+      "losingTeamid": 4,
+      "id": 70,
+      "mapid": 6,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1491.0671500934725,
+      "expectedScore": 0.005176637078814217,
+      "adjustment": 8.290194691009882
+    },
+    "secondMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 9,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 9,
+      "losingTeamid": 4,
+      "id": 71,
+      "mapid": 2,
+      "homeTeamELO": 1507.7338167601392,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.005176637078813329,
+      "adjustment": 8.376471975656779
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 9,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 4,
+      "losingTeamid": 9,
+      "id": 72,
+      "mapid": 3,
+      "homeTeamELO": 1475,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.2154955616706138,
+      "adjustment": -6.537536986078218
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "numbani",
+      "homeTeamid": 9,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 4,
+      "losingTeamid": 9,
+      "id": 73,
+      "mapid": 4,
+      "homeTeamELO": 1484.5316773454008,
+      "awayTeamELO": 1483.3333333333333,
+      "expectedScore": 0.010347292937539443,
+      "adjustment": -8.419560774479496
+    },
+    "tieBreakerMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 9,
+      "awayTeamid": 4,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 4,
+      "losingTeamid": 9,
+      "id": 74,
+      "mapid": 8,
+      "homeTeamELO": 1525,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.2154955616706138,
+      "adjustment": -26.795796347255113
+    },
+    "expectedScore": -0.02858439933701007,
+    "adjustment": -6.535702125621553
+  },
+  {
+    "mapWins": 4,
+    "mapLosses": 0,
+    "score": 10,
+    "id": 19,
+    "week": 2,
+    "_homeTeam": "SEO",
+    "_awayTeam": "BOS",
+    "homeTeamELO": 1524.9528199312376,
+    "awayTeamELO": 1501.8345249696458,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 6,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 11,
+          "id": 75,
+          "mapid": 6,
+          "homeTeamELO": 1500.5995165731943,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.07711543484626526,
+          "adjustment": 7.690704709614455
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 6,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 11,
+          "id": 76,
+          "mapid": 7,
+          "homeTeamELO": 1516.0671500934725,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": 0.06676811455101017,
+          "adjustment": 7.776932378741582
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "oasis",
+          "homeTeamid": 6,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 6,
+          "losingTeamid": 11,
+          "id": 77,
+          "mapid": 9,
+          "homeTeamELO": 1521.5535148611614,
+          "awayTeamELO": 1523.2042036527448,
+          "expectedScore": -0.014253085524561726,
+          "adjustment": 25.118775712704682
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "numbani",
+          "homeTeamid": 6,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 11,
+          "id": 78,
+          "mapid": 4,
+          "homeTeamELO": 1516.6666666666667,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.2154955616706138,
+          "adjustment": 6.537536986078218
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 6,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 11,
+      "id": 75,
+      "mapid": 6,
+      "homeTeamELO": 1500.5995165731943,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.07711543484626526,
+      "adjustment": 7.690704709614455
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 6,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 11,
+      "id": 76,
+      "mapid": 7,
+      "homeTeamELO": 1516.0671500934725,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": 0.06676811455101017,
+      "adjustment": 7.776932378741582
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "oasis",
+      "homeTeamid": 6,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 6,
+      "losingTeamid": 11,
+      "id": 77,
+      "mapid": 9,
+      "homeTeamELO": 1521.5535148611614,
+      "awayTeamELO": 1523.2042036527448,
+      "expectedScore": -0.014253085524561726,
+      "adjustment": 25.118775712704682
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "numbani",
+      "homeTeamid": 6,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 11,
+      "id": 78,
+      "mapid": 4,
+      "homeTeamELO": 1516.6666666666667,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.2154955616706138,
+      "adjustment": 6.537536986078218
+    },
+    "expectedScore": 1.0630683622399353,
+    "adjustment": 8.37837341040006
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -10,
+    "id": 20,
+    "week": 2,
+    "_homeTeam": "SHD",
+    "_awayTeam": "FLA",
+    "homeTeamELO": 1472.1405391608073,
+    "awayTeamELO": 1474.3525184637247,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "dorado",
+          "homeTeamid": 3,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 8,
+          "losingTeamid": 3,
+          "id": 79,
+          "mapid": 1,
+          "homeTeamELO": 1483.3333333333333,
+          "awayTeamELO": 1491.1102887357958,
+          "expectedScore": -0.06714041799515202,
+          "adjustment": -7.773829850040399
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 3,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 8,
+          "losingTeamid": 3,
+          "id": 80,
+          "mapid": 2,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1483.9328499065275,
+          "expectedScore": 0.06676811455101017,
+          "adjustment": -8.889734287925084
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 3,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 8,
+          "losingTeamid": 3,
+          "id": 81,
+          "mapid": 3,
+          "homeTeamELO": 1451.1983440120675,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.4186377859336088,
+          "adjustment": -21.511351783886592
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "numbani",
+          "homeTeamid": 3,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 8,
+          "losingTeamid": 3,
+          "id": 82,
+          "mapid": 4,
+          "homeTeamELO": 1482.8200937878955,
+          "awayTeamELO": 1483.3333333333333,
+          "expectedScore": -0.004431663250654694,
+          "adjustment": -8.296402806244545
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "dorado",
+      "homeTeamid": 3,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 8,
+      "losingTeamid": 3,
+      "id": 79,
+      "mapid": 1,
+      "homeTeamELO": 1483.3333333333333,
+      "awayTeamELO": 1491.1102887357958,
+      "expectedScore": -0.06714041799515202,
+      "adjustment": -7.773829850040399
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 3,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 8,
+      "losingTeamid": 3,
+      "id": 80,
+      "mapid": 2,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1483.9328499065275,
+      "expectedScore": 0.06676811455101017,
+      "adjustment": -8.889734287925084
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 3,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 8,
+      "losingTeamid": 3,
+      "id": 81,
+      "mapid": 3,
+      "homeTeamELO": 1451.1983440120675,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.4186377859336088,
+      "adjustment": -21.511351783886592
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "numbani",
+      "homeTeamid": 3,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 8,
+      "losingTeamid": 3,
+      "id": 82,
+      "mapid": 4,
+      "homeTeamELO": 1482.8200937878955,
+      "awayTeamELO": 1483.3333333333333,
+      "expectedScore": -0.004431663250654694,
+      "adjustment": -8.296402806244545
+    },
+    "expectedScore": -0.10186403508179076,
+    "adjustment": -9.279502467110822
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 1,
+    "score": 6,
+    "id": 21,
+    "week": 2,
+    "_homeTeam": "LON",
+    "_awayTeam": "DAL",
+    "homeTeamELO": 1520.625,
+    "awayTeamELO": 1474.8009058621471,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 7,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 7,
+          "losingTeamid": 5,
+          "id": 83,
+          "mapid": 6,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1484.5265817038996,
+          "expectedScore": 0.20524290126413858,
+          "adjustment": 6.6229758227988444
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 7,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 7,
+          "losingTeamid": 5,
+          "id": 84,
+          "mapid": 7,
+          "homeTeamELO": 1524.400483426806,
+          "awayTeamELO": 1492.9080466441685,
+          "expectedScore": 0.27118527246341095,
+          "adjustment": 22.740122729471576
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 7,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 5,
+          "losingTeamid": 7,
+          "id": 85,
+          "mapid": 9,
+          "homeTeamELO": 1525,
+          "awayTeamELO": 1475.1292167836505,
+          "expectedScore": 0.4276856913865563,
+          "adjustment": -28.5640474282213
+        },
+        {
+          "homePoints": 4,
+          "awayPoints": 3,
+          "mapName": "numbani",
+          "homeTeamid": 7,
+          "awayTeamid": 5,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 7,
+          "losingTeamid": 5,
+          "id": 86,
+          "mapid": 4,
+          "homeTeamELO": 1532.134989321266,
+          "awayTeamELO": 1483.9328499065275,
+          "expectedScore": 0.4135607313327525,
+          "adjustment": 4.886993905560396
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 7,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 7,
+      "losingTeamid": 5,
+      "id": 83,
+      "mapid": 6,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1484.5265817038996,
+      "expectedScore": 0.20524290126413858,
+      "adjustment": 6.6229758227988444
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 7,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 7,
+      "losingTeamid": 5,
+      "id": 84,
+      "mapid": 7,
+      "homeTeamELO": 1524.400483426806,
+      "awayTeamELO": 1492.9080466441685,
+      "expectedScore": 0.27118527246341095,
+      "adjustment": 22.740122729471576
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 7,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 5,
+      "losingTeamid": 7,
+      "id": 85,
+      "mapid": 9,
+      "homeTeamELO": 1525,
+      "awayTeamELO": 1475.1292167836505,
+      "expectedScore": 0.4276856913865563,
+      "adjustment": -28.5640474282213
+    },
+    "fourthMap": {
+      "homePoints": 4,
+      "awayPoints": 3,
+      "mapName": "numbani",
+      "homeTeamid": 7,
+      "awayTeamid": 5,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 7,
+      "losingTeamid": 5,
+      "id": 86,
+      "mapid": 4,
+      "homeTeamELO": 1532.134989321266,
+      "awayTeamELO": 1483.9328499065275,
+      "expectedScore": 0.4135607313327525,
+      "adjustment": 4.886993905560396
+    },
+    "expectedScore": 2.098125562436607,
+    "adjustment": 3.658007285215681
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -5,
+    "id": 22,
+    "week": 2,
+    "_homeTeam": "VAL",
+    "_awayTeam": "LON",
+    "homeTeamELO": 1508.6837666389767,
+    "awayTeamELO": 1524.2830072852157,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "dorado",
+          "homeTeamid": 2,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 7,
+          "losingTeamid": 2,
+          "id": 87,
+          "mapid": 1,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.143801281448102,
+          "adjustment": -9.531677345400851
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 2,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 7,
+          "losingTeamid": 2,
+          "id": 88,
+          "mapid": 7,
+          "homeTeamELO": 1482.7338167601392,
+          "awayTeamELO": 1547.1406061562775,
+          "expectedScore": -0.549848812734842,
+          "adjustment": -3.7512598938763166
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "oasis",
+          "homeTeamid": 2,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 2,
+          "losingTeamid": 7,
+          "id": 89,
+          "mapid": 9,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1496.4359525717787,
+          "expectedScore": -0.041178738407878335,
+          "adjustment": 25.343156153398986
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 2,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 2,
+          "losingTeamid": 7,
+          "id": 90,
+          "mapid": 5,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": 8.333333333333332
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 2,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 7,
+          "losingTeamid": 2,
+          "id": 91,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -25
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "dorado",
+      "homeTeamid": 2,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 7,
+      "losingTeamid": 2,
+      "id": 87,
+      "mapid": 1,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.143801281448102,
+      "adjustment": -9.531677345400851
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 2,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 7,
+      "losingTeamid": 2,
+      "id": 88,
+      "mapid": 7,
+      "homeTeamELO": 1482.7338167601392,
+      "awayTeamELO": 1547.1406061562775,
+      "expectedScore": -0.549848812734842,
+      "adjustment": -3.7512598938763166
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "oasis",
+      "homeTeamid": 2,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 2,
+      "losingTeamid": 7,
+      "id": 89,
+      "mapid": 9,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1496.4359525717787,
+      "expectedScore": -0.041178738407878335,
+      "adjustment": 25.343156153398986
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 2,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 2,
+      "losingTeamid": 7,
+      "id": 90,
+      "mapid": 5,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": 8.333333333333332
+    },
+    "tieBreakerMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 2,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 7,
+      "losingTeamid": 2,
+      "id": 91,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -25
+    },
+    "expectedScore": -0.7178892584913203,
+    "adjustment": -4.0144788201643875
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -11,
+    "id": 23,
+    "week": 2,
+    "_homeTeam": "GLA",
+    "_awayTeam": "NYE",
+    "homeTeamELO": 1507.2708387610135,
+    "awayTeamELO": 1521.8968427849536,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "dorado",
+          "homeTeamid": 4,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -2,
+          "winningTeamid": 12,
+          "losingTeamid": 4,
+          "id": 92,
+          "mapid": 1,
+          "homeTeamELO": 1516.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.14380128144810378,
+          "adjustment": -17.865010678734198
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 4,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 4,
+          "id": 93,
+          "mapid": 7,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1508.9328499065275,
+          "expectedScore": -0.14896559730023107,
+          "adjustment": -7.091953355831408
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 4,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 12,
+          "losingTeamid": 4,
+          "id": 94,
+          "mapid": 9,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.07194198878329461,
+          "adjustment": -24.400483426805877
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "eichenwalde",
+          "homeTeamid": 4,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 4,
+          "id": 95,
+          "mapid": 5,
+          "homeTeamELO": 1516.6666666666667,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.14380128144810378,
+          "adjustment": -9.531677345400864
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "dorado",
+      "homeTeamid": 4,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -2,
+      "winningTeamid": 12,
+      "losingTeamid": 4,
+      "id": 92,
+      "mapid": 1,
+      "homeTeamELO": 1516.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.14380128144810378,
+      "adjustment": -17.865010678734198
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 4,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 4,
+      "id": 93,
+      "mapid": 7,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1508.9328499065275,
+      "expectedScore": -0.14896559730023107,
+      "adjustment": -7.091953355831408
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 4,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 12,
+      "losingTeamid": 4,
+      "id": 94,
+      "mapid": 9,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.07194198878329461,
+      "adjustment": -24.400483426805877
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "eichenwalde",
+      "homeTeamid": 4,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 4,
+      "id": 95,
+      "mapid": 5,
+      "homeTeamELO": 1516.6666666666667,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.14380128144810378,
+      "adjustment": -9.531677345400864
+    },
+    "expectedScore": -0.6731547778296587,
+    "adjustment": -9.681417395784695
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -5,
+    "id": 24,
+    "week": 2,
+    "_homeTeam": "BOS",
+    "_awayTeam": "SFS",
+    "homeTeamELO": 1493.4561515592457,
+    "awayTeamELO": 1495.036172142317,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "dorado",
+          "homeTeamid": 11,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 1,
+          "losingTeamid": 11,
+          "id": 96,
+          "mapid": 1,
+          "homeTeamELO": 1508.9328499065275,
+          "awayTeamELO": 1509.531677345401,
+          "expectedScore": -0.0051706866324590095,
+          "adjustment": -8.290244278062842
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 11,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 11,
+          "losingTeamid": 1,
+          "id": 97,
+          "mapid": 7,
+          "homeTeamELO": 1500.5564009545917,
+          "awayTeamELO": 1483.3333333333333,
+          "expectedScore": 0.14859422276930623,
+          "adjustment": 23.761714810255782
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 11,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 1,
+          "losingTeamid": 11,
+          "id": 98,
+          "mapid": 9,
+          "homeTeamELO": 1498.08542794004,
+          "awayTeamELO": 1493.4624630139217,
+          "expectedScore": 0.03991553233038303,
+          "adjustment": -25.332629436086524
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 11,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 11,
+          "losingTeamid": 1,
+          "id": 99,
+          "mapid": 5,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1499.400483426806,
+          "expectedScore": 0.07711543484626304,
+          "adjustment": 7.690704709614475
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 11,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 1,
+          "losingTeamid": 11,
+          "id": 100,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500,
+          "expectedScore": 0,
+          "adjustment": -8.333333333333332
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "dorado",
+      "homeTeamid": 11,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 1,
+      "losingTeamid": 11,
+      "id": 96,
+      "mapid": 1,
+      "homeTeamELO": 1508.9328499065275,
+      "awayTeamELO": 1509.531677345401,
+      "expectedScore": -0.0051706866324590095,
+      "adjustment": -8.290244278062842
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 11,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 11,
+      "losingTeamid": 1,
+      "id": 97,
+      "mapid": 7,
+      "homeTeamELO": 1500.5564009545917,
+      "awayTeamELO": 1483.3333333333333,
+      "expectedScore": 0.14859422276930623,
+      "adjustment": 23.761714810255782
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 11,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 1,
+      "losingTeamid": 11,
+      "id": 98,
+      "mapid": 9,
+      "homeTeamELO": 1498.08542794004,
+      "awayTeamELO": 1493.4624630139217,
+      "expectedScore": 0.03991553233038303,
+      "adjustment": -25.332629436086524
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 11,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 11,
+      "losingTeamid": 1,
+      "id": 99,
+      "mapid": 5,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1499.400483426806,
+      "expectedScore": 0.07711543484626304,
+      "adjustment": 7.690704709614475
+    },
+    "tieBreakerMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 11,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 1,
+      "losingTeamid": 11,
+      "id": 100,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500,
+      "expectedScore": 0,
+      "adjustment": -8.333333333333332
+    },
+    "expectedScore": -0.07276213522066755,
+    "adjustment": -4.619285498230624
+  },
+  {
+    "mapWins": 1,
+    "mapLosses": 3,
+    "score": -8,
+    "id": 25,
+    "week": 3,
+    "_homeTeam": "SFS",
+    "_awayTeam": "LON",
+    "homeTeamELO": 1499.6554576405474,
+    "awayTeamELO": 1528.2974861053801,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 1,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -2,
+          "winningTeamid": 7,
+          "losingTeamid": 1,
+          "id": 101,
+          "mapid": 5,
+          "homeTeamELO": 1491.7097787171915,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.0003722593663395557,
+          "adjustment": -16.66976882805283
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 1,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -2,
+          "winningTeamid": 7,
+          "losingTeamid": 1,
+          "id": 102,
+          "mapid": 7,
+          "homeTeamELO": 1459.5716185230774,
+          "awayTeamELO": 1550.8918660501538,
+          "expectedScore": -0.7708521130244721,
+          "adjustment": -10.2428990581294
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "oasis",
+          "homeTeamid": 1,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 1,
+          "winningTeamid": 1,
+          "losingTeamid": 7,
+          "id": 103,
+          "mapid": 9,
+          "homeTeamELO": 1518.7950924500083,
+          "awayTeamELO": 1471.0927964183797,
+          "expectedScore": 0.4093259191491625,
+          "adjustment": 4.922284007090313
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 1,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 7,
+          "losingTeamid": 1,
+          "id": 104,
+          "mapid": 6,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1514.9563091561322,
+          "expectedScore": -0.05718044439656289,
+          "adjustment": -7.856829630028643
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 1,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -2,
+      "winningTeamid": 7,
+      "losingTeamid": 1,
+      "id": 101,
+      "mapid": 5,
+      "homeTeamELO": 1491.7097787171915,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.0003722593663395557,
+      "adjustment": -16.66976882805283
+    },
+    "secondMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 1,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -2,
+      "winningTeamid": 7,
+      "losingTeamid": 1,
+      "id": 102,
+      "mapid": 7,
+      "homeTeamELO": 1459.5716185230774,
+      "awayTeamELO": 1550.8918660501538,
+      "expectedScore": -0.7708521130244721,
+      "adjustment": -10.2428990581294
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "oasis",
+      "homeTeamid": 1,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 1,
+      "winningTeamid": 1,
+      "losingTeamid": 7,
+      "id": 103,
+      "mapid": 9,
+      "homeTeamELO": 1518.7950924500083,
+      "awayTeamELO": 1471.0927964183797,
+      "expectedScore": 0.4093259191491625,
+      "adjustment": 4.922284007090313
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 1,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 7,
+      "losingTeamid": 1,
+      "id": 104,
+      "mapid": 6,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1514.9563091561322,
+      "expectedScore": -0.05718044439656289,
+      "adjustment": -7.856829630028643
+    },
+    "expectedScore": -1.3160342109419076,
+    "adjustment": -6.266217927241962
+  },
+  {
+    "mapWins": 1,
+    "mapLosses": 3,
+    "score": -6,
+    "id": 26,
+    "week": 3,
+    "_homeTeam": "SHD",
+    "_awayTeam": "SEO",
+    "homeTeamELO": 1462.8610366936964,
+    "awayTeamELO": 1533.3311933416378,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "numbani",
+          "homeTeamid": 3,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 3,
+          "id": 105,
+          "mapid": 4,
+          "homeTeamELO": 1474.523690981651,
+          "awayTeamELO": 1523.204203652745,
+          "expectedScore": -0.4176120701024697,
+          "adjustment": -4.853232749146086
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 3,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 3,
+          "id": 106,
+          "mapid": 2,
+          "homeTeamELO": 1482.7769323787415,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.22027457030135444,
+          "adjustment": -6.49771191415538
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 3,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 6,
+          "losingTeamid": 3,
+          "id": 107,
+          "mapid": 9,
+          "homeTeamELO": 1473.2042036527448,
+          "awayTeamELO": 1546.6722905738661,
+          "expectedScore": -0.625085309149191,
+          "adjustment": -3.1242890904234084
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "dorado",
+          "homeTeamid": 3,
+          "awayTeamid": 6,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 3,
+          "losingTeamid": 6,
+          "id": 108,
+          "mapid": 1,
+          "homeTeamELO": 1475.559503483293,
+          "awayTeamELO": 1508.29019469101,
+          "expectedScore": -0.28178639360729685,
+          "adjustment": 10.681553280060808
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "numbani",
+      "homeTeamid": 3,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 3,
+      "id": 105,
+      "mapid": 4,
+      "homeTeamELO": 1474.523690981651,
+      "awayTeamELO": 1523.204203652745,
+      "expectedScore": -0.4176120701024697,
+      "adjustment": -4.853232749146086
+    },
+    "secondMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 3,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 3,
+      "id": 106,
+      "mapid": 2,
+      "homeTeamELO": 1482.7769323787415,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.22027457030135444,
+      "adjustment": -6.49771191415538
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 3,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 6,
+      "losingTeamid": 3,
+      "id": 107,
+      "mapid": 9,
+      "homeTeamELO": 1473.2042036527448,
+      "awayTeamELO": 1546.6722905738661,
+      "expectedScore": -0.625085309149191,
+      "adjustment": -3.1242890904234084
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "dorado",
+      "homeTeamid": 3,
+      "awayTeamid": 6,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 3,
+      "losingTeamid": 6,
+      "id": 108,
+      "mapid": 1,
+      "homeTeamELO": 1475.559503483293,
+      "awayTeamELO": 1508.29019469101,
+      "expectedScore": -0.28178639360729685,
+      "adjustment": 10.681553280060808
+    },
+    "expectedScore": -3.201487759114716,
+    "adjustment": -2.6236052258299534
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -3,
+    "id": 27,
+    "week": 3,
+    "_homeTeam": "GLA",
+    "_awayTeam": "VAL",
+    "homeTeamELO": 1497.5894213652289,
+    "awayTeamELO": 1504.6692878188123,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 4,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 4,
+          "losingTeamid": 2,
+          "id": 109,
+          "mapid": 5,
+          "homeTeamELO": 1507.134989321266,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.010347292937538555,
+          "adjustment": 8.41956077447949
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 4,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 4,
+          "losingTeamid": 2,
+          "id": 110,
+          "mapid": 7,
+          "homeTeamELO": 1484.5747133108353,
+          "awayTeamELO": 1478.982556866263,
+          "expectedScore": 0.04828239088491415,
+          "adjustment": 24.597646742625713
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 4,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 4,
+          "id": 111,
+          "mapid": 3,
+          "homeTeamELO": 1506.5375369860783,
+          "awayTeamELO": 1530.9421394248682,
+          "expectedScore": -0.2103803882050883,
+          "adjustment": -6.580163431624264
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 4,
+          "mapName": "junkertown",
+          "homeTeamid": 4,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 4,
+          "id": 112,
+          "mapid": 6,
+          "homeTeamELO": 1482.7769554024626,
+          "awayTeamELO": 1499.9137797232856,
+          "expectedScore": -0.14785135611308586,
+          "adjustment": -7.1012386990576175
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 4,
+          "awayTeamid": 2,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 2,
+          "losingTeamid": 4,
+          "id": 113,
+          "mapid": 8,
+          "homeTeamELO": 1526.7957963472552,
+          "awayTeamELO": 1475,
+          "expectedScore": 0.44395675044034677,
+          "adjustment": -12.032972920336222
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 4,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 4,
+      "losingTeamid": 2,
+      "id": 109,
+      "mapid": 5,
+      "homeTeamELO": 1507.134989321266,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.010347292937538555,
+      "adjustment": 8.41956077447949
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 4,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 4,
+      "losingTeamid": 2,
+      "id": 110,
+      "mapid": 7,
+      "homeTeamELO": 1484.5747133108353,
+      "awayTeamELO": 1478.982556866263,
+      "expectedScore": 0.04828239088491415,
+      "adjustment": 24.597646742625713
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 4,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 4,
+      "id": 111,
+      "mapid": 3,
+      "homeTeamELO": 1506.5375369860783,
+      "awayTeamELO": 1530.9421394248682,
+      "expectedScore": -0.2103803882050883,
+      "adjustment": -6.580163431624264
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 4,
+      "mapName": "junkertown",
+      "homeTeamid": 4,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 4,
+      "id": 112,
+      "mapid": 6,
+      "homeTeamELO": 1482.7769554024626,
+      "awayTeamELO": 1499.9137797232856,
+      "expectedScore": -0.14785135611308586,
+      "adjustment": -7.1012386990576175
+    },
+    "tieBreakerMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 4,
+      "awayTeamid": 2,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 2,
+      "losingTeamid": 4,
+      "id": 113,
+      "mapid": 8,
+      "homeTeamELO": 1526.7957963472552,
+      "awayTeamELO": 1475,
+      "expectedScore": 0.44395675044034677,
+      "adjustment": -12.032972920336222
+    },
+    "expectedScore": -0.3259947781089494,
+    "adjustment": -2.50687989552286
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 2,
+    "score": 7,
+    "id": 28,
+    "week": 3,
+    "_homeTeam": "BOS",
+    "_awayTeam": "LON",
+    "homeTeamELO": 1488.836866061015,
+    "awayTeamELO": 1534.5637040326221,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 4,
+          "awayPoints": 5,
+          "mapName": "numbani",
+          "homeTeamid": 11,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 7,
+          "losingTeamid": 11,
+          "id": 114,
+          "mapid": 4,
+          "homeTeamELO": 1485.1291296805884,
+          "awayTeamELO": 1537.0219832268263,
+          "expectedScore": -0.4447764224837307,
+          "adjustment": -4.62686314596891
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 11,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 11,
+          "losingTeamid": 7,
+          "id": 115,
+          "mapid": 2,
+          "homeTeamELO": 1507.7338167601392,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": -0.005176637078813329,
+          "adjustment": 8.376471975656779
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "ilios",
+          "homeTeamid": 11,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 1,
+          "winningTeamid": 11,
+          "losingTeamid": 7,
+          "id": 116,
+          "mapid": 3,
+          "homeTeamELO": 1475,
+          "awayTeamELO": 1525,
+          "expectedScore": -0.42877870445028865,
+          "adjustment": 11.906489203752406
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "junkertown",
+          "homeTeamid": 11,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 7,
+          "losingTeamid": 11,
+          "id": 117,
+          "mapid": 6,
+          "homeTeamELO": 1483.9759619570523,
+          "awayTeamELO": 1522.8131387861608,
+          "expectedScore": -0.3339573331480832,
+          "adjustment": -5.550355557099307
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "lijiangTower",
+          "homeTeamid": 11,
+          "awayTeamid": 7,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 11,
+          "losingTeamid": 7,
+          "id": 118,
+          "mapid": 8,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1525,
+          "expectedScore": -0.28694326901580824,
+          "adjustment": 27.391193908465066
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 4,
+      "awayPoints": 5,
+      "mapName": "numbani",
+      "homeTeamid": 11,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 7,
+      "losingTeamid": 11,
+      "id": 114,
+      "mapid": 4,
+      "homeTeamELO": 1485.1291296805884,
+      "awayTeamELO": 1537.0219832268263,
+      "expectedScore": -0.4447764224837307,
+      "adjustment": -4.62686314596891
+    },
+    "secondMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 11,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 11,
+      "losingTeamid": 7,
+      "id": 115,
+      "mapid": 2,
+      "homeTeamELO": 1507.7338167601392,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": -0.005176637078813329,
+      "adjustment": 8.376471975656779
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "ilios",
+      "homeTeamid": 11,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 1,
+      "winningTeamid": 11,
+      "losingTeamid": 7,
+      "id": 116,
+      "mapid": 3,
+      "homeTeamELO": 1475,
+      "awayTeamELO": 1525,
+      "expectedScore": -0.42877870445028865,
+      "adjustment": 11.906489203752406
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "junkertown",
+      "homeTeamid": 11,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 7,
+      "losingTeamid": 11,
+      "id": 117,
+      "mapid": 6,
+      "homeTeamELO": 1483.9759619570523,
+      "awayTeamELO": 1522.8131387861608,
+      "expectedScore": -0.3339573331480832,
+      "adjustment": -5.550355557099307
+    },
+    "tieBreakerMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "lijiangTower",
+      "homeTeamid": 11,
+      "awayTeamid": 7,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 11,
+      "losingTeamid": 7,
+      "id": 118,
+      "mapid": 8,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1525,
+      "expectedScore": -0.28694326901580824,
+      "adjustment": 27.391193908465066
+    },
+    "expectedScore": -2.0937236058561606,
+    "adjustment": 8.52536588049015
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 2,
+    "score": 7,
+    "id": 29,
+    "week": 3,
+    "_homeTeam": "PHI",
+    "_awayTeam": "NYE",
+    "homeTeamELO": 1493.5787315043806,
+    "awayTeamELO": 1531.5782601807382,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "numbani",
+          "homeTeamid": 9,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 9,
+          "id": 119,
+          "mapid": 4,
+          "homeTeamELO": 1476.1121165709212,
+          "awayTeamELO": 1516.0671500934725,
+          "expectedScore": -0.343486626420221,
+          "adjustment": -5.470944779831491
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 9,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 9,
+          "losingTeamid": 12,
+          "id": 120,
+          "mapid": 2,
+          "homeTeamELO": 1516.110288735796,
+          "awayTeamELO": 1508.3333333333333,
+          "expectedScore": 0.06714041799515424,
+          "adjustment": 7.773829850040381
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 9,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 9,
+          "id": 121,
+          "mapid": 3,
+          "homeTeamELO": 1468.4624630139217,
+          "awayTeamELO": 1548.2042036527448,
+          "expectedScore": -0.6767047497783953,
+          "adjustment": -2.6941270851800385
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "dorado",
+          "homeTeamid": 9,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 9,
+          "losingTeamid": 12,
+          "id": 122,
+          "mapid": 1,
+          "homeTeamELO": 1490.468322654599,
+          "awayTeamELO": 1517.8650106787343,
+          "expectedScore": -0.23607292621914766,
+          "adjustment": 10.300607718492898
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "lijiangTower",
+          "homeTeamid": 9,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 9,
+          "losingTeamid": 12,
+          "id": 123,
+          "mapid": 8,
+          "homeTeamELO": 1498.2042036527448,
+          "awayTeamELO": 1500,
+          "expectedScore": -0.0155060140380483,
+          "adjustment": 25.129216783650403
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "numbani",
+      "homeTeamid": 9,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 9,
+      "id": 119,
+      "mapid": 4,
+      "homeTeamELO": 1476.1121165709212,
+      "awayTeamELO": 1516.0671500934725,
+      "expectedScore": -0.343486626420221,
+      "adjustment": -5.470944779831491
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 9,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 9,
+      "losingTeamid": 12,
+      "id": 120,
+      "mapid": 2,
+      "homeTeamELO": 1516.110288735796,
+      "awayTeamELO": 1508.3333333333333,
+      "expectedScore": 0.06714041799515424,
+      "adjustment": 7.773829850040381
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 9,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 9,
+      "id": 121,
+      "mapid": 3,
+      "homeTeamELO": 1468.4624630139217,
+      "awayTeamELO": 1548.2042036527448,
+      "expectedScore": -0.6767047497783953,
+      "adjustment": -2.6941270851800385
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "dorado",
+      "homeTeamid": 9,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 9,
+      "losingTeamid": 12,
+      "id": 122,
+      "mapid": 1,
+      "homeTeamELO": 1490.468322654599,
+      "awayTeamELO": 1517.8650106787343,
+      "expectedScore": -0.23607292621914766,
+      "adjustment": 10.300607718492898
+    },
+    "tieBreakerMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "lijiangTower",
+      "homeTeamid": 9,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 9,
+      "losingTeamid": 12,
+      "id": 123,
+      "mapid": 8,
+      "homeTeamELO": 1498.2042036527448,
+      "awayTeamELO": 1500,
+      "expectedScore": -0.0155060140380483,
+      "adjustment": 25.129216783650403
+    },
+    "expectedScore": -1.7429985210250027,
+    "adjustment": 8.19656111346094
+  },
+  {
+    "mapWins": 4,
+    "mapLosses": 0,
+    "score": 13,
+    "id": 30,
+    "week": 3,
+    "_homeTeam": "HOU",
+    "_awayTeam": "FLA",
+    "homeTeamELO": 1504.8273397807961,
+    "awayTeamELO": 1483.6320209308356,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "numbani",
+          "homeTeamid": 10,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 10,
+          "losingTeamid": 8,
+          "id": 124,
+          "mapid": 4,
+          "homeTeamELO": 1500.5132395454377,
+          "awayTeamELO": 1491.6297361395777,
+          "expectedScore": 0.07668962289857273,
+          "adjustment": 7.694253142511894
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 10,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 10,
+          "losingTeamid": 8,
+          "id": 125,
+          "mapid": 7,
+          "homeTeamELO": 1524.3581365956923,
+          "awayTeamELO": 1492.2661832398608,
+          "expectedScore": 0.2763188090968498,
+          "adjustment": 22.69734325752625
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 10,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 10,
+          "losingTeamid": 8,
+          "id": 126,
+          "mapid": 3,
+          "homeTeamELO": 1476.7957963472552,
+          "awayTeamELO": 1521.5113517838865,
+          "expectedScore": -0.383987341274616,
+          "adjustment": 28.1998945106218
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "junkertown",
+          "homeTeamid": 10,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 2,
+          "winningTeamid": 10,
+          "losingTeamid": 8,
+          "id": 127,
+          "mapid": 6,
+          "homeTeamELO": 1539.2320383185984,
+          "awayTeamELO": 1500,
+          "expectedScore": 0.3373241634828519,
+          "adjustment": 13.855631970976233
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "numbani",
+      "homeTeamid": 10,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 10,
+      "losingTeamid": 8,
+      "id": 124,
+      "mapid": 4,
+      "homeTeamELO": 1500.5132395454377,
+      "awayTeamELO": 1491.6297361395777,
+      "expectedScore": 0.07668962289857273,
+      "adjustment": 7.694253142511894
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 10,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 10,
+      "losingTeamid": 8,
+      "id": 125,
+      "mapid": 7,
+      "homeTeamELO": 1524.3581365956923,
+      "awayTeamELO": 1492.2661832398608,
+      "expectedScore": 0.2763188090968498,
+      "adjustment": 22.69734325752625
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 10,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 10,
+      "losingTeamid": 8,
+      "id": 126,
+      "mapid": 3,
+      "homeTeamELO": 1476.7957963472552,
+      "awayTeamELO": 1521.5113517838865,
+      "expectedScore": -0.383987341274616,
+      "adjustment": 28.1998945106218
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "junkertown",
+      "homeTeamid": 10,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 2,
+      "winningTeamid": 10,
+      "losingTeamid": 8,
+      "id": 127,
+      "mapid": 6,
+      "homeTeamELO": 1539.2320383185984,
+      "awayTeamELO": 1500,
+      "expectedScore": 0.3373241634828519,
+      "adjustment": 13.855631970976233
+    },
+    "expectedScore": 0.9748714394256552,
+    "adjustment": 11.273558025538449
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -6,
+    "id": 31,
+    "week": 3,
+    "_homeTeam": "SEO",
+    "_awayTeam": "NYE",
+    "homeTeamELO": 1535.9547985674678,
+    "awayTeamELO": 1523.3816990672772,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "eichenwalde",
+          "homeTeamid": 6,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 6,
+          "id": 128,
+          "mapid": 5,
+          "homeTeamELO": 1507.7338167601392,
+          "awayTeamELO": 1509.5316773454008,
+          "expectedScore": -0.015523837625059045,
+          "adjustment": -8.203968019791175
+        },
+        {
+          "homePoints": 5,
+          "awayPoints": 4,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 6,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 6,
+          "losingTeamid": 12,
+          "id": 129,
+          "mapid": 7,
+          "homeTeamELO": 1523.844082472214,
+          "awayTeamELO": 1516.024803262359,
+          "expectedScore": 0.06750568708269888,
+          "adjustment": 7.770785940977509
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "oasis",
+          "homeTeamid": 6,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 12,
+          "losingTeamid": 6,
+          "id": 130,
+          "mapid": 9,
+          "homeTeamELO": 1549.7965796642895,
+          "awayTeamELO": 1532.7338167601392,
+          "expectedScore": 0.14721340501366154,
+          "adjustment": -9.56011170844718
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 0,
+          "mapName": "junkertown",
+          "homeTeamid": 6,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 2,
+          "winningTeamid": 6,
+          "losingTeamid": 12,
+          "id": 131,
+          "mapid": 6,
+          "homeTeamELO": 1508.2902212828087,
+          "awayTeamELO": 1508.4195536100476,
+          "expectedScore": -0.001116745031202182,
+          "adjustment": 16.67597287526002
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 6,
+          "awayTeamid": 12,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 12,
+          "losingTeamid": 6,
+          "id": 132,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1474.8707832163495,
+          "expectedScore": 0.21660552231520835,
+          "adjustment": -26.805046019293403
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "eichenwalde",
+      "homeTeamid": 6,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 6,
+      "id": 128,
+      "mapid": 5,
+      "homeTeamELO": 1507.7338167601392,
+      "awayTeamELO": 1509.5316773454008,
+      "expectedScore": -0.015523837625059045,
+      "adjustment": -8.203968019791175
+    },
+    "secondMap": {
+      "homePoints": 5,
+      "awayPoints": 4,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 6,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 6,
+      "losingTeamid": 12,
+      "id": 129,
+      "mapid": 7,
+      "homeTeamELO": 1523.844082472214,
+      "awayTeamELO": 1516.024803262359,
+      "expectedScore": 0.06750568708269888,
+      "adjustment": 7.770785940977509
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "oasis",
+      "homeTeamid": 6,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 12,
+      "losingTeamid": 6,
+      "id": 130,
+      "mapid": 9,
+      "homeTeamELO": 1549.7965796642895,
+      "awayTeamELO": 1532.7338167601392,
+      "expectedScore": 0.14721340501366154,
+      "adjustment": -9.56011170844718
+    },
+    "fourthMap": {
+      "homePoints": 1,
+      "awayPoints": 0,
+      "mapName": "junkertown",
+      "homeTeamid": 6,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 2,
+      "winningTeamid": 6,
+      "losingTeamid": 12,
+      "id": 131,
+      "mapid": 6,
+      "homeTeamELO": 1508.2902212828087,
+      "awayTeamELO": 1508.4195536100476,
+      "expectedScore": -0.001116745031202182,
+      "adjustment": 16.67597287526002
+    },
+    "tieBreakerMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 6,
+      "awayTeamid": 12,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 12,
+      "losingTeamid": 6,
+      "id": 132,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1474.8707832163495,
+      "expectedScore": 0.21660552231520835,
+      "adjustment": -26.805046019293403
+    },
+    "expectedScore": 0.5787600051461368,
+    "adjustment": -6.167587504824503
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -8,
+    "id": 32,
+    "week": 3,
+    "_homeTeam": "SHD",
+    "_awayTeam": "PHI",
+    "homeTeamELO": 1460.2374314678664,
+    "awayTeamELO": 1501.7752926178416,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "eichenwalde",
+          "homeTeamid": 3,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": -2,
+          "winningTeamid": 9,
+          "losingTeamid": 3,
+          "id": 133,
+          "mapid": 5,
+          "homeTeamELO": 1483.3333333333333,
+          "awayTeamELO": 1492.2661832398608,
+          "expectedScore": -0.07711543484626526,
+          "adjustment": -16.02403804294779
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 3,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 9,
+          "losingTeamid": 3,
+          "id": 134,
+          "mapid": 7,
+          "homeTeamELO": 1507.7338167601392,
+          "awayTeamELO": 1467.2661832398608,
+          "expectedScore": 0.34785400633050045,
+          "adjustment": -11.232116719420837
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 1,
+          "mapName": "oasis",
+          "homeTeamid": 3,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 9,
+            "type": "control"
+          },
+          "score": 1,
+          "winningTeamid": 3,
+          "losingTeamid": 9,
+          "id": 135,
+          "mapid": 9,
+          "homeTeamELO": 1470.0799145623214,
+          "awayTeamELO": 1531.5375369860783,
+          "expectedScore": -0.5252013457616989,
+          "adjustment": 12.710011214680824
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "junkertown",
+          "homeTeamid": 3,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 3,
+          "losingTeamid": 9,
+          "id": 136,
+          "mapid": 6,
+          "homeTeamELO": 1476.241379977502,
+          "awayTeamELO": 1499.9568613576766,
+          "expectedScore": -0.20445848517326048,
+          "adjustment": 10.037154043110503
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 3,
+          "awayTeamid": 9,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 9,
+          "losingTeamid": 3,
+          "id": 137,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1523.3334204363953,
+          "expectedScore": -0.20117458413448341,
+          "adjustment": -23.32354513221264
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "eichenwalde",
+      "homeTeamid": 3,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": -2,
+      "winningTeamid": 9,
+      "losingTeamid": 3,
+      "id": 133,
+      "mapid": 5,
+      "homeTeamELO": 1483.3333333333333,
+      "awayTeamELO": 1492.2661832398608,
+      "expectedScore": -0.07711543484626526,
+      "adjustment": -16.02403804294779
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 3,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 9,
+      "losingTeamid": 3,
+      "id": 134,
+      "mapid": 7,
+      "homeTeamELO": 1507.7338167601392,
+      "awayTeamELO": 1467.2661832398608,
+      "expectedScore": 0.34785400633050045,
+      "adjustment": -11.232116719420837
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 1,
+      "mapName": "oasis",
+      "homeTeamid": 3,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 9,
+        "type": "control"
+      },
+      "score": 1,
+      "winningTeamid": 3,
+      "losingTeamid": 9,
+      "id": 135,
+      "mapid": 9,
+      "homeTeamELO": 1470.0799145623214,
+      "awayTeamELO": 1531.5375369860783,
+      "expectedScore": -0.5252013457616989,
+      "adjustment": 12.710011214680824
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "junkertown",
+      "homeTeamid": 3,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 3,
+      "losingTeamid": 9,
+      "id": 136,
+      "mapid": 6,
+      "homeTeamELO": 1476.241379977502,
+      "awayTeamELO": 1499.9568613576766,
+      "expectedScore": -0.20445848517326048,
+      "adjustment": 10.037154043110503
+    },
+    "tieBreakerMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 3,
+      "awayTeamid": 9,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 9,
+      "losingTeamid": 3,
+      "id": 137,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1523.3334204363953,
+      "expectedScore": -0.20117458413448341,
+      "adjustment": -23.32354513221264
+    },
+    "expectedScore": -1.9038270230534096,
+    "adjustment": -5.7151621658874285
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 0,
+    "score": 9,
+    "id": 33,
+    "week": 3,
+    "_homeTeam": "DAL",
+    "_awayTeam": "SFS",
+    "homeTeamELO": 1471.1428985769314,
+    "awayTeamELO": 1493.3892397133054,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 3,
+          "mapName": "eichenwalde",
+          "homeTeamid": 5,
+          "awayTeamid": 1,
+          "tie": true,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 0,
+          "id": 138,
+          "mapid": 5,
+          "homeTeamELO": 1492.2661832398608,
+          "awayTeamELO": 1475.0400098891387,
+          "expectedScore": 0.14862097398951057,
+          "adjustment": -1.2385081165792546
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "horizonLunarColony",
+          "homeTeamid": 5,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 7,
+            "type": "assault"
+          },
+          "score": 1,
+          "winningTeamid": 5,
+          "losingTeamid": 1,
+          "id": 139,
+          "mapid": 7,
+          "homeTeamELO": 1470.167923914697,
+          "awayTeamELO": 1449.328719464948,
+          "expectedScore": 0.17972468112411466,
+          "adjustment": 6.835627657299044
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 5,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 5,
+          "losingTeamid": 1,
+          "id": 140,
+          "mapid": 3,
+          "homeTeamELO": 1452.391193908465,
+          "awayTeamELO": 1515.4683226545992,
+          "expectedScore": -0.53874554993646,
+          "adjustment": 29.4895462494705
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 1,
+          "mapName": "junkertown",
+          "homeTeamid": 5,
+          "awayTeamid": 1,
+          "tie": false,
+          "mapType": {
+            "id": 6,
+            "type": "escort"
+          },
+          "score": 1,
+          "winningTeamid": 5,
+          "losingTeamid": 1,
+          "id": 141,
+          "mapid": 6,
+          "homeTeamELO": 1477.9036058811007,
+          "awayTeamELO": 1500.4765037033046,
+          "expectedScore": -0.19463628466289684,
+          "adjustment": 9.955302372190806
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 3,
+      "mapName": "eichenwalde",
+      "homeTeamid": 5,
+      "awayTeamid": 1,
+      "tie": true,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 0,
+      "id": 138,
+      "mapid": 5,
+      "homeTeamELO": 1492.2661832398608,
+      "awayTeamELO": 1475.0400098891387,
+      "expectedScore": 0.14862097398951057,
+      "adjustment": -1.2385081165792546
+    },
+    "secondMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "horizonLunarColony",
+      "homeTeamid": 5,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 7,
+        "type": "assault"
+      },
+      "score": 1,
+      "winningTeamid": 5,
+      "losingTeamid": 1,
+      "id": 139,
+      "mapid": 7,
+      "homeTeamELO": 1470.167923914697,
+      "awayTeamELO": 1449.328719464948,
+      "expectedScore": 0.17972468112411466,
+      "adjustment": 6.835627657299044
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 5,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 5,
+      "losingTeamid": 1,
+      "id": 140,
+      "mapid": 3,
+      "homeTeamELO": 1452.391193908465,
+      "awayTeamELO": 1515.4683226545992,
+      "expectedScore": -0.53874554993646,
+      "adjustment": 29.4895462494705
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 1,
+      "mapName": "junkertown",
+      "homeTeamid": 5,
+      "awayTeamid": 1,
+      "tie": false,
+      "mapType": {
+        "id": 6,
+        "type": "escort"
+      },
+      "score": 1,
+      "winningTeamid": 5,
+      "losingTeamid": 1,
+      "id": 141,
+      "mapid": 6,
+      "homeTeamELO": 1477.9036058811007,
+      "awayTeamELO": 1500.4765037033046,
+      "expectedScore": -0.19463628466289684,
+      "adjustment": 9.955302372190806
+    },
+    "expectedScore": -1.0230840857258467,
+    "adjustment": 9.39664133036798
+  },
+  {
+    "mapWins": 2,
+    "mapLosses": 3,
+    "score": -6,
+    "id": 34,
+    "week": 3,
+    "_homeTeam": "DAL",
+    "_awayTeam": "BOS",
+    "homeTeamELO": 1480.5395399072995,
+    "awayTeamELO": 1497.3622319415051,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 6,
+          "awayPoints": 4,
+          "mapName": "numbani",
+          "homeTeamid": 5,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 5,
+          "losingTeamid": 11,
+          "id": 142,
+          "mapid": 4,
+          "homeTeamELO": 1479.0458560009672,
+          "awayTeamELO": 1480.5022665346196,
+          "expectedScore": -0.01257558578130924,
+          "adjustment": 8.43812988151091
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 5,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -1,
+          "winningTeamid": 11,
+          "losingTeamid": 5,
+          "id": 143,
+          "mapid": 2,
+          "homeTeamELO": 1491.6666666666667,
+          "awayTeamELO": 1516.110288735796,
+          "expectedScore": -0.21071565122816915,
+          "adjustment": -6.57736957309859
+        },
+        {
+          "homePoints": 1,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 5,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -1,
+          "winningTeamid": 11,
+          "losingTeamid": 5,
+          "id": 144,
+          "mapid": 3,
+          "homeTeamELO": 1481.8807401579356,
+          "awayTeamELO": 1486.9064892037525,
+          "expectedScore": -0.043392779110348556,
+          "adjustment": -7.971726840747095
+        },
+        {
+          "homePoints": 3,
+          "awayPoints": 0,
+          "mapName": "dorado",
+          "homeTeamid": 5,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": 2,
+          "winningTeamid": 5,
+          "losingTeamid": 11,
+          "id": 145,
+          "mapid": 1,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1500.6426056284647,
+          "expectedScore": -0.005548696700735434,
+          "adjustment": 16.712905805839462
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "lijiangTower",
+          "homeTeamid": 5,
+          "awayTeamid": 11,
+          "tie": false,
+          "mapType": {
+            "id": 8,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 11,
+          "losingTeamid": 5,
+          "id": 146,
+          "mapid": 8,
+          "homeTeamELO": 1500,
+          "awayTeamELO": 1519.0578605751318,
+          "expectedScore": -0.16439395071319396,
+          "adjustment": -23.63005041072338
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 6,
+      "awayPoints": 4,
+      "mapName": "numbani",
+      "homeTeamid": 5,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 5,
+      "losingTeamid": 11,
+      "id": 142,
+      "mapid": 4,
+      "homeTeamELO": 1479.0458560009672,
+      "awayTeamELO": 1480.5022665346196,
+      "expectedScore": -0.01257558578130924,
+      "adjustment": 8.43812988151091
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 5,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -1,
+      "winningTeamid": 11,
+      "losingTeamid": 5,
+      "id": 143,
+      "mapid": 2,
+      "homeTeamELO": 1491.6666666666667,
+      "awayTeamELO": 1516.110288735796,
+      "expectedScore": -0.21071565122816915,
+      "adjustment": -6.57736957309859
+    },
+    "thirdMap": {
+      "homePoints": 1,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 5,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -1,
+      "winningTeamid": 11,
+      "losingTeamid": 5,
+      "id": 144,
+      "mapid": 3,
+      "homeTeamELO": 1481.8807401579356,
+      "awayTeamELO": 1486.9064892037525,
+      "expectedScore": -0.043392779110348556,
+      "adjustment": -7.971726840747095
+    },
+    "fourthMap": {
+      "homePoints": 3,
+      "awayPoints": 0,
+      "mapName": "dorado",
+      "homeTeamid": 5,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": 2,
+      "winningTeamid": 5,
+      "losingTeamid": 11,
+      "id": 145,
+      "mapid": 1,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1500.6426056284647,
+      "expectedScore": -0.005548696700735434,
+      "adjustment": 16.712905805839462
+    },
+    "tieBreakerMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "lijiangTower",
+      "homeTeamid": 5,
+      "awayTeamid": 11,
+      "tie": false,
+      "mapType": {
+        "id": 8,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 11,
+      "losingTeamid": 5,
+      "id": 146,
+      "mapid": 8,
+      "homeTeamELO": 1500,
+      "awayTeamELO": 1519.0578605751318,
+      "expectedScore": -0.16439395071319396,
+      "adjustment": -23.63005041072338
+    },
+    "expectedScore": -0.7741087375203612,
+    "adjustment": -4.8992730585746616
+  },
+  {
+    "mapWins": 3,
+    "mapLosses": 1,
+    "score": 10,
+    "id": 35,
+    "week": 3,
+    "_homeTeam": "VAL",
+    "_awayTeam": "FLA",
+    "homeTeamELO": 1507.1761677143352,
+    "awayTeamELO": 1472.358462905297,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 2,
+          "mapName": "eichenwalde",
+          "homeTeamid": 2,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 5,
+            "type": "hybrid"
+          },
+          "score": 1,
+          "winningTeamid": 2,
+          "losingTeamid": 8,
+          "id": 147,
+          "mapid": 5,
+          "homeTeamELO": 1499.9137725588537,
+          "awayTeamELO": 1483.9328499065275,
+          "expectedScore": 0.13789314516190831,
+          "adjustment": 7.18422379031743
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 2,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": 3,
+          "winningTeamid": 2,
+          "losingTeamid": 8,
+          "id": 148,
+          "mapid": 2,
+          "homeTeamELO": 1508.3333333333333,
+          "awayTeamELO": 1492.8225841944527,
+          "expectedScore": 0.13384166841057787,
+          "adjustment": 23.884652763245185
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 0,
+          "mapName": "ilios",
+          "homeTeamid": 2,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": 3,
+          "winningTeamid": 2,
+          "losingTeamid": 8,
+          "id": 149,
+          "mapid": 3,
+          "homeTeamELO": 1537.5223028564924,
+          "awayTeamELO": 1493.3114572732648,
+          "expectedScore": 0.3796999289274563,
+          "adjustment": 21.835833925604533
+        },
+        {
+          "homePoints": 2,
+          "awayPoints": 3,
+          "mapName": "dorado",
+          "homeTeamid": 2,
+          "awayTeamid": 8,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -1,
+          "winningTeamid": 8,
+          "losingTeamid": 2,
+          "id": 150,
+          "mapid": 1,
+          "homeTeamELO": 1498.8016559879325,
+          "awayTeamELO": 1498.8841185858362,
+          "expectedScore": -0.0007120392941142306,
+          "adjustment": -8.327399672549047
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 2,
+      "mapName": "eichenwalde",
+      "homeTeamid": 2,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 5,
+        "type": "hybrid"
+      },
+      "score": 1,
+      "winningTeamid": 2,
+      "losingTeamid": 8,
+      "id": 147,
+      "mapid": 5,
+      "homeTeamELO": 1499.9137725588537,
+      "awayTeamELO": 1483.9328499065275,
+      "expectedScore": 0.13789314516190831,
+      "adjustment": 7.18422379031743
+    },
+    "secondMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 2,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": 3,
+      "winningTeamid": 2,
+      "losingTeamid": 8,
+      "id": 148,
+      "mapid": 2,
+      "homeTeamELO": 1508.3333333333333,
+      "awayTeamELO": 1492.8225841944527,
+      "expectedScore": 0.13384166841057787,
+      "adjustment": 23.884652763245185
+    },
+    "thirdMap": {
+      "homePoints": 2,
+      "awayPoints": 0,
+      "mapName": "ilios",
+      "homeTeamid": 2,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": 3,
+      "winningTeamid": 2,
+      "losingTeamid": 8,
+      "id": 149,
+      "mapid": 3,
+      "homeTeamELO": 1537.5223028564924,
+      "awayTeamELO": 1493.3114572732648,
+      "expectedScore": 0.3796999289274563,
+      "adjustment": 21.835833925604533
+    },
+    "fourthMap": {
+      "homePoints": 2,
+      "awayPoints": 3,
+      "mapName": "dorado",
+      "homeTeamid": 2,
+      "awayTeamid": 8,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -1,
+      "winningTeamid": 8,
+      "losingTeamid": 2,
+      "id": 150,
+      "mapid": 1,
+      "homeTeamELO": 1498.8016559879325,
+      "awayTeamELO": 1498.8841185858362,
+      "expectedScore": -0.0007120392941142306,
+      "adjustment": -8.327399672549047
+    },
+    "expectedScore": 1.598068484094938,
+    "adjustment": 7.876810796160996
+  },
+  {
+    "mapWins": 0,
+    "mapLosses": 4,
+    "score": -12,
+    "id": 36,
+    "week": 3,
+    "_homeTeam": "GLA",
+    "_awayTeam": "HOU",
+    "homeTeamELO": 1495.082541469706,
+    "awayTeamELO": 1516.1008978063346,
+    "maps": {
+      "items": [
+        {
+          "homePoints": 3,
+          "awayPoints": 4,
+          "mapName": "numbani",
+          "homeTeamid": 4,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 4,
+            "type": "hybrid"
+          },
+          "score": -1,
+          "winningTeamid": 10,
+          "losingTeamid": 4,
+          "id": 151,
+          "mapid": 4,
+          "homeTeamELO": 1491.7528941078128,
+          "awayTeamELO": 1508.2074926879495,
+          "expectedScore": -0.1419742924833285,
+          "adjustment": -7.150214229305596
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "templeOfAnubis",
+          "homeTeamid": 4,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 2,
+            "type": "assault"
+          },
+          "score": -2,
+          "winningTeamid": 10,
+          "losingTeamid": 4,
+          "id": 152,
+          "mapid": 2,
+          "homeTeamELO": 1499.9568613576764,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.07156971290450898,
+          "adjustment": -17.26308094087091
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 2,
+          "mapName": "ilios",
+          "homeTeamid": 4,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 3,
+            "type": "control"
+          },
+          "score": -3,
+          "winningTeamid": 10,
+          "losingTeamid": 4,
+          "id": 153,
+          "mapid": 3,
+          "homeTeamELO": 1499.957373554454,
+          "awayTeamELO": 1504.995690857877,
+          "expectedScore": -0.04350127940868109,
+          "adjustment": -24.63748933826099
+        },
+        {
+          "homePoints": 0,
+          "awayPoints": 1,
+          "mapName": "dorado",
+          "homeTeamid": 4,
+          "awayTeamid": 10,
+          "tie": false,
+          "mapType": {
+            "id": 1,
+            "type": "escort"
+          },
+          "score": -2,
+          "winningTeamid": 10,
+          "losingTeamid": 4,
+          "id": 154,
+          "mapid": 1,
+          "homeTeamELO": 1498.8016559879325,
+          "awayTeamELO": 1491.6666666666667,
+          "expectedScore": 0.06159979086597733,
+          "adjustment": -17.17999825721648
+        }
+      ]
+    },
+    "firstMap": {
+      "homePoints": 3,
+      "awayPoints": 4,
+      "mapName": "numbani",
+      "homeTeamid": 4,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 4,
+        "type": "hybrid"
+      },
+      "score": -1,
+      "winningTeamid": 10,
+      "losingTeamid": 4,
+      "id": 151,
+      "mapid": 4,
+      "homeTeamELO": 1491.7528941078128,
+      "awayTeamELO": 1508.2074926879495,
+      "expectedScore": -0.1419742924833285,
+      "adjustment": -7.150214229305596
+    },
+    "secondMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "templeOfAnubis",
+      "homeTeamid": 4,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 2,
+        "type": "assault"
+      },
+      "score": -2,
+      "winningTeamid": 10,
+      "losingTeamid": 4,
+      "id": 152,
+      "mapid": 2,
+      "homeTeamELO": 1499.9568613576764,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.07156971290450898,
+      "adjustment": -17.26308094087091
+    },
+    "thirdMap": {
+      "homePoints": 0,
+      "awayPoints": 2,
+      "mapName": "ilios",
+      "homeTeamid": 4,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 3,
+        "type": "control"
+      },
+      "score": -3,
+      "winningTeamid": 10,
+      "losingTeamid": 4,
+      "id": 153,
+      "mapid": 3,
+      "homeTeamELO": 1499.957373554454,
+      "awayTeamELO": 1504.995690857877,
+      "expectedScore": -0.04350127940868109,
+      "adjustment": -24.63748933826099
+    },
+    "fourthMap": {
+      "homePoints": 0,
+      "awayPoints": 1,
+      "mapName": "dorado",
+      "homeTeamid": 4,
+      "awayTeamid": 10,
+      "tie": false,
+      "mapType": {
+        "id": 1,
+        "type": "escort"
+      },
+      "score": -2,
+      "winningTeamid": 10,
+      "losingTeamid": 4,
+      "id": 154,
+      "mapid": 1,
+      "homeTeamELO": 1498.8016559879325,
+      "awayTeamELO": 1491.6666666666667,
+      "expectedScore": 0.06159979086597733,
+      "adjustment": -17.17999825721648
+    },
+    "expectedScore": -0.9667520171698474,
+    "adjustment": -10.343669983903268
+  }
+]

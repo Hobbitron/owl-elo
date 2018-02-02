@@ -42,9 +42,6 @@ export class Team {
     }
 
     updateElo(match: Match, isHome: boolean) {
-        if (this.abbreviation === "SEO") {
-            debugger;
-        }
         if (isHome) {
             this.elo += match.adjustment;            
         } else {
@@ -80,6 +77,23 @@ export class Team {
             this._mapElo[mapname] = 1500;
         }
         return this._mapElo[mapname];
+    }
+
+    public toString(): string {
+        return JSON.stringify(this.getJson(),null,2);
+    }
+
+    public getJson() {
+        let _homeMatches = this._homeMatches;
+        let _awayMatches = this._awayMatches;
+        delete this._homeMatches;
+        delete this._awayMatches;
+        let obj = JSON.parse(JSON.stringify(this));
+        this._homeMatches = _homeMatches;
+        this._awayMatches = _awayMatches;
+        obj['_homeMatches'] = JSON.parse(_homeMatches.toString());
+        obj['_awayMatches'] = JSON.parse(_awayMatches.toString());
+        return obj;
     }
 }
 

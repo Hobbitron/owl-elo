@@ -69,4 +69,12 @@ export class Teams {
             return a.elo > b.elo ? -1 : 1;
         })
     }
+
+    public static toString() {
+        var ret = [];        
+        for (let i = 0;i < this._teams.length;i++) {
+            ret.push(this._teams[i].getJson());
+        }
+        return JSON.stringify(ret,null,2);
+    }
 }
